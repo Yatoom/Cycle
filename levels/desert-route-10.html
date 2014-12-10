@@ -1,0 +1,135 @@
+<!-- HTML -->
+<a id="north" class="click north"/>
+<a id="west" class="click west"/>
+<a id="east" class="click east"/>
+<a id="south" class="click south"/>
+<div id="faker">
+<img src="levels/img/aegis-sand.png" id="shield" class="click interact"/>
+
+<!-- CSS -->
+<style>
+.game {
+  background: url(levels/img/desert-route-10.png) no-repeat;
+}
+
+#north {
+    top: 14%;
+    left: 51%;
+    height: 10%;
+    width: 10%;
+}
+
+#west {
+    top: 60%;
+    left: 0%;
+    height: 15%;
+    width: 10%;
+}
+
+#east {
+    top: 57%;
+    left: 90%;
+    height: 15%;
+    width: 10%;
+}
+
+#south {
+    top: 85%;
+    left: 63%;
+    height: 15%;
+    width: 14%;
+}
+
+#shield {
+    top: 23%;
+    left: 15%;
+    height: 21%;
+    width: 13%;
+    display: none;
+}
+
+.overridebox {
+position: absolute;
+z-index: 1;
+height: 88px;
+width: 88px;
+
+}
+
+
+	
+</style>
+
+<!-- Javascript -->
+<script>
+
+// dont toch! EVER!
+Clicky = new Audio("levels/Sounds/interact.ogg");
+//massive override skillz
+// dont toch! EVER!
+function wrapperBefore(){
+//wrap a box around the scepter so that it never disappears; the wrapper is higher
+$( "<div id =faker class=overridebox></div>" ).insertBefore( "#Scepter" );
+}
+    
+    secondaryPlay("wind");
+
+if (!hasItem(Item.AEGIS)) {
+    $("#shield").show();
+}
+
+$("#north").click(function(){
+    goToLevel("desert-route-3");
+});
+
+$("#east").click(function(){
+    goToLevel("desert-route-6");
+});
+
+$("#south").click(function(){
+    goToLevel("desert-route-8");
+});
+
+$("#west").click(function(){
+    goToLevel("desert-route");
+});
+
+
+$(document).ready(function(){
+
+$("#shield").click(function(){
+    $("#shield").remove();
+    addItem(Item.AEGIS);
+
+    primaryPlay("puzzleSolved");
+
+    log("You found the Aegis shield!");
+
+	
+	 setTimeout(wrapperBefore, 1000)	; 
+	 setTimeout(ClickEvent, 1000);		
+
+});
+
+//SPECIAL DO NOT TOUCH PLS IT SO HARD TO MAKE ND STUF
+$( "body" ).delegate( "#faker", "click", function() {
+log("Zeus came through, this scepter did an amazing job!");
+Clicky.play();
+});
+
+//scepter still works if you do not have the shield yet - display mesage
+  $("#Scepter").click(function(){
+ 
+  if (!hasItem(Item.AEGIS)){
+    log("The scepter is pulsing at full power!");
+  	deselect();
+  
+  //you have the shield in your inventory
+  }else{
+	   log("The scepter has done it's job - the Aegis is mine!");
+	 	deselect();
+  }
+  });
+  
+});
+</script>

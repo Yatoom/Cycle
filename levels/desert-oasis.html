@@ -1,0 +1,198 @@
+<!-- Desert OASIS -->
+
+<!-- HTML -->
+<a id="back" class="south click area-1"></a>
+<a id="oasis" class="inspect click area-2 interactable paper-match"></a>
+<div class="bubbles"/>
+<div class="bubbles-2"/>
+<div class="bubbles-3"/>
+<div class="ankh"/>
+<div id="tefnut" class="tefnut talk"/>
+
+<!-- CSS -->
+<style>
+    /* Load background */
+    .game {
+      background: url(levels/img/desert-oasis.png) no-repeat;
+  }
+  /* Set areas */
+  .area-1 {
+    top: 89%;
+    left: 29%;
+    height: 11%;
+    width: 21%;
+}
+
+.area-2 {
+    top: 68%;
+    left: 38%;
+    height: 20%;
+    width: 20%;
+    z-index: 1;
+}
+
+.ankh {
+    top: 67%;
+    left: 43%;
+    height: 25%;
+    width: 10%;
+    z-index: 2;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	opacity:0.4;
+    background: url('levels/img/ankh.png') no-repeat scroll 100% 100% transparent;
+    position: absolute;
+    background-size: 100% 100%;
+    display: none;
+}
+
+.bubbles, .bubbles-2, .bubbles-3 {
+    background-size: 100% 100% !important;
+    height: 30%;
+    width: 20%;
+    left: 39%;
+    top: 65%;
+    position: absolute;
+}
+
+.bubbles {
+    background: url('levels/img/bubbles.png') 100% 100% no-repeat;
+    animation: steam 5s linear infinite;
+    -webkit-animation: steam 5s linear infinite;
+}
+
+.bubbles-2 {
+    background: url('levels/img/bubbles-2.png') 100% 100% no-repeat;
+    animation: steam 4s linear infinite;
+    -webkit-animation: steam 4s linear infinite;
+}
+
+.bubbles-3 {
+    background: url('levels/img/bubbles-3.png') 100% 100% no-repeat;
+    animation: steam 3s linear infinite;
+    -webkit-animation: steam 3s linear infinite;
+}
+
+.tefnut {
+    position: absolute;
+    background: url('levels/img/tefnut.png');
+    background-size: 100% 100% !important;
+    height: 65%;
+    width: 15%;
+    left: 70%;
+    top: 33%;
+    display: none;
+}
+
+/* Animation for steam */
+@-webkit-keyframes steam {
+    0% {opacity:0;-webkit-transform:translateY(0) }
+    70% {opacity:1;-webkit-transform:translateY(-200px)}
+    100% {opacity:0;-webkit-transform:translateY(-250px)}
+}
+@keyframes steam {
+    0% {opacity:0;transform:translateY(0) }
+    70% {opacity:1;transform:translateY(-200px)}
+    100% {opacity:0;transform:translateY(-250px)}
+}
+
+</style>
+
+<!-- Javascript -->
+<script>
+// OASIS PROGRESS [RESET]
+setConfig(Config.OASISPROGRESS, 0);
+
+
+
+function getRandomInt(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+$(document).ready(function(){
+
+secondaryPlay("desertPyramid");
+ 
+	// //loop audio
+	// bgsound.addEventListener('ended', function() {
+ //    this.currentTime = 0;
+ //    this.play();
+ // }, false);
+
+  //initialise background music for page refresh
+
+ //check if victory sound is done; after it is you can start the background sound
+
+ // victory.addEventListener('ended', function() {
+ //    this.currentTime = 0;
+ //    bgsound.play();
+ // }, false);
+
+
+	
+    $("#back").on("click", function(){
+        // Back to desert start - change background music to wind
+		//could be that you spamm stuff so victory is still playing - stop it and reset it
+		stop("puzzleSolved");     
+		stop("desertPyramid");
+        goToLevel('desert-route');      //more friendly
+     //   goToLevel('desert-route-' + getRandomInt(2, 9) );     this is really user unfriendly; although cool ;
+    });
+
+    $("#oasis").on("click", function(){
+        if(isSelected("Paper")){
+        stop("puzzleSolved");     
+        
+           primaryPlay("portal")	// play portal sound
+
+            $("#tefnut").fadeIn(3000); //fade in duration 3000 ms
+            setConfig(Config.TEFNUT,1);
+            removeItem(Item.PAPER);
+            deselect();
+        }else {
+            $(".ankh").fadeIn().fadeOut(function(){
+                if(getConfig(Config.TEFNUT) != 1){
+                 log("Did you see that? An ankh appeared for a short time! Maybe it has to do something with the paper in my inventory...");    
+                }
+            });
+            deselect();
+            
+        }
+    });
+
+	   $("#Scepter").click(function(){
+	   //dont have it yet got aegis
+	     if (!hasItem(Item.AEGIS)){
+		log("The scepter seems powerless here, maybe the Oasis is intefering?");
+		deselect();
+		 }else{ 		//got aegis
+		   log("The scepter has done it's job - the Aegis is mine!");
+		   deselect();
+		 }   
+	
+	   });
+   
+   
+		
+		//if you summoned her before, get her back - if you lost the ankh then you prolly summoned her before so she's here
+    if(getConfig(Config.TEFNUT)==1 || hasItem(Item.PAPER) == false) {
+        $("#tefnut").css("display", "block");
+    }
+
+    $("#tefnut").on("click", function(){
+        if (getConfig(Config.RA)==1){
+            speak("Tefnut", "Did you speak with Ra? Do as he commands, for he is our only hope!");
+			
+        } else if(getConfig(Config.TEFNUT)==1){
+            speak("Tefnut", "Seek Ra at the Sacred Altar - He Is best to judge the situation.");
+        } else {
+            speak("Tefnut", "Why have you summoned me, Tefnut - Godess of moisture and rain, daughter to the sun god Ra. Foolish mortal! do you not see the signs? The looming darkness is ever growing inside the Pyramid. What is this strange aura surrounding you? Have you come to aid the deities in our struggle? Very well then.  If we are to preserve this realm from the darkness we shall need to empower Ra once more. He has been dormant for ages; wake him by writing his name in the sands near the Sacred Alter - he will surely come. This Scroll will show you the writing.");
+        }
+
+        if(!hasItem(Item.SCROLL) && getConfig(Config.RA) != 1){
+            addItem(Item.SCROLL);					
+            setConfig(Config.TEFNUT,1);
+        }
+    });
+});
+</script>

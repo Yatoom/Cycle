@@ -1,0 +1,88 @@
+
+<!-- HTML -->
+<a id="left" class="west click area-1"></a>
+<a id="right" class="east click area-3"></a>
+<a id="tablet-overlay" class="inspect click area-4"></a>
+
+<img src="levels/img/tablet.png" id="tablet">
+
+<!-- CSS -->
+<style>
+  /* Set Background */
+  .game {
+    background: url(levels/img/desert-west.png) no-repeat;
+  }
+  /* Go left */
+  .area-1 {
+    top: 64%;
+    left: 0%;
+    height: 36%;
+    width: 20%;
+  }
+  /* Inspect door */
+  .area-2 {
+    top: 37%;
+    left: 43%;
+    height: 13%;
+    width: 8%;
+  }
+  /* Go right */
+  .area-3 {
+    top: 55%;
+    left: 85%;
+    height: 38%;
+    width: 15%;
+  }
+
+  #tablet {
+    top: 64%;
+    left: 63%;
+    height: 250px;
+    position: absolute;
+  }
+
+  .area-4 {
+    z-index:1;
+    top: 64%;
+    left: 65%;
+    height: 31%;
+    width: 12%;
+  }
+
+</style>
+
+<!-- Javascript -->
+<script>
+  var sound;
+
+  $(document).ready(function(){
+
+//play music in the background
+
+secondaryPlay("wind");
+
+    $("#tablet-overlay").on("click",function(){
+
+      log("This ancient tablet has lore written on it - it reads: Those who seek the Gods needeth a touch of magics in ordeteh forth them to judgeth the mortal worthy. The living are not so easily worthy of the gods.");
+
+
+    });
+
+    $('#left').on("click", function(){
+      // Stop playing the sound
+      stop("wind");
+      
+      goToLevel("desert-altar");
+    })
+
+    $('#right').on("click", function(){
+        // Stop playing the sound
+        stop("wind");
+
+        goToLevel("desert-pyramid");
+      })
+
+  });
+</script>
+
+

@@ -1,0 +1,92 @@
+<!-- HTML -->
+<a id="mountain" class="west click area-1"></a>
+<a id="sailor" class="click talk area-2"></a>
+<a id="sailor-flag" class="click talk area-3"></a>
+<a id="sailor-ice" class="click talk area-4"></a>
+<a id="sailor-tail" class="click talk area-5"></a>
+
+<!-- CSS -->
+<style>
+    .game {
+        background: url(levels/img/viking-ship-2.png) no-repeat;
+    }
+    .area-1 {
+        top: 67%;
+        left: 0%;
+        height: 13%;
+        width: 12%;
+    }  
+    .area-2 {
+        top: 66%;
+        left: 12%;
+        height: 15%;
+        width: 6%;
+    }
+    .area-3 {
+        top: 73%;
+        left: 27%;
+        height: 11%;
+        width: 5%;
+    }
+    .area-4 {
+        top: 47%;
+        left: 37%;
+        height: 11%;
+        width: 5%;
+    }
+    .area-5 {
+        top: 63%;
+        left: 51%;
+        height: 11%;
+        width: 5%;
+    }
+</style>
+<!-- Javascript -->
+<script>    
+
+//holds a variable that checks if you came from the viking-ship area or not. (if you did - display log)
+var first;
+//you are the ship
+shippy = 1;
+    //first will be set to 1 if you came from teh viking-ship area
+    if(first == 1) {
+
+        $("#log").show(); 
+        first = 0;
+        //   //make the log show again (gotoLevel hides it)
+    }else{ 
+
+      //you did not come from the viking ship area.
+  }
+
+secondaryPlay("norseBasic");
+
+//loop the audio
+// Sound.norseBasic.addEventListener('ended', function() {
+//     this.currentTime = 0;
+//     this.play();
+//  }, false);
+
+
+
+$("#mountain").click(function(){
+       //reset music
+       stop("norseBasic")       // stop the sound
+       shippy = 0;      //leaving the area
+       goToLevel("viking-mountain");   
+   });
+
+$("#sailor").click(function(){
+    speak("Captain Edgar", "Thank you so much for helping us out! We are forever in your debt!");
+});
+$("#sailor-tail").click(function(){
+    speak("Viking Frømund", "You must be a true Viking warrior!");
+});
+$("#sailor-ice").click(function(){
+    speak("Viking Hoskuld", "Thanks for scaring the ice!");
+});
+$("#sailor-flag").click(function(){
+    speak("Viking Valgard", "It was getting cold up here. That was an amazing job you did!");
+});
+
+</script>

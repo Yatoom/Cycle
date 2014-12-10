@@ -1,0 +1,65 @@
+<!-- HTML -->
+<img src="levels/img/anubis.png" id="anubis"/>
+<div id="ending">You condemned the world of the living to be invaded by the undead armies of Anubis. In doing so however, you have allowed yourself and your wife to roam the living world freely once more, though things are no the same as they used to be. The dead can never live again; no matter the endeavour. The undead and the living shall be locked in a war for a long time to come. But eventually, the undead cannot be stopped. Life slowly fades untill everything becomes Undead - with Anubis as your surpreme ruler, cruel as he may be; he now holds all power.
+
+</div>
+<input id="restart" type="submit" onclick="reset()" value="THE CYCLE CONTINUES">
+
+
+
+<!-- CSS -->
+<style>
+
+  #anubis {
+    display:inline-block;
+    height: 77%;
+    width: 25%;
+    left: 4%;
+    top: 15%;
+    position: absolute;
+
+  }
+
+#ending {
+  
+display: inline-block;
+color: white;
+position: absolute;
+left: 33%;
+top: 10%;
+width: 60%;
+font-size: 25px;
+}
+
+
+#restart {
+    color: #fff;
+    background-color: #111;
+    padding: 20px;
+    cursor: pointer;
+    border: 1px solid #333;
+    position: absolute;
+    left: 33%;
+    top: 70%;
+    width: 60%;
+    font-size: 25px;
+}
+
+#restart:hover {
+    background-color: #222;
+}
+
+
+</style>
+<!-- Javascript -->
+<script>
+
+secondaryPlay("credits");
+
+$("#restart").on("click",function(){
+    stop('credits');
+    reset();
+
+});
+
+</script>

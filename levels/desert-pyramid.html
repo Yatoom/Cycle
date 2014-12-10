@@ -1,0 +1,161 @@
+
+<!-- HTML -->
+<a href="#Left" class="west click area-1"></a>
+<a id="door" href="#Door" class="inspect click area-2 interactable key-match"></a>
+<a href="#Right" class="east click area-3"></a>
+<a id="cactus" class="inspect click area-4"></a>
+<img src="levels/img/ra.png" id="ra"/>
+<a id="ra-overlay" class="click talk lightning-match interactable"/>
+<img src="levels/img/aegis.png" id="aegis-shield"/>
+
+
+<!-- CSS -->
+<style>
+  /* Set Background */
+  .game {
+    background: url(levels/img/desert-pyramid.png) no-repeat;
+  }
+  /* Go left */
+  .area-1 {
+    top: 63%;
+    left: 0%;
+    height: 31%;
+    width: 17%;
+  }
+  /* Inspect door */
+  .area-2 {
+ top: 48%;
+left: 42%;
+height: 13%;
+width: 8%;
+  }
+  /* Go right */
+  .area-3 {
+    top: 65%;
+    left: 85%;
+    height: 31%;
+    width: 15%;
+  }
+  /* click cactus */
+.area-4 {
+top: 26%;
+left: 7%;
+height: 10%;
+width: 4%;
+}
+#ra {
+    height: 65%;
+    width: 19%;
+    left: 25%;
+    top: 24%;
+    position: absolute;
+    display: none;
+}
+#ra-overlay {
+    height: 65%;
+    width: 19%;
+    left: 25%;
+    top: 24%;
+    position: absolute;
+    display: none;
+    z-index: 2;
+}
+#aegis-shield {
+    display: none;
+    top: 52%;
+    left: 22%;
+    height: 23%;
+    width: 13%;
+    position: absolute;
+}
+
+</style>
+
+<!-- Javascript -->
+<script>
+var sound;
+
+  $(document).ready(function(){
+    stop("intro");
+    if (getConfig(Config.ENDGAMESTARTED) == 1 && getConfig(Config.ENTEREDPYRAMID) == 1) {
+      $("#ra").show();
+      $("#aegis-shield").show();
+      $("#ra-overlay").show();
+    }
+
+    $("#ra-overlay").click(function(){
+      if (isSelected("Lightning")) {
+        speak("Ra", "WHAT ARE YOU DOING? Your bolts won't work against the Aegis, do not be deceived by the evil inside - you must protect the realm and destroy the magical bond that holds these portals together!");
+      } else {
+        speak("Ra", "WHY HAVE YOU RETURNED? THIS EVIL IS STILL PRESENT, GO BACK INSIDE AND DEAL WITH THIS THREAT!");
+      }
+    });
+
+    // Load background sound
+    if (getConfig(Config.ENDGAMESTARTED) == 1){
+      $(".game").css("background", "url(levels/img/desert-pyramid-darker.png) no-repeat");
+      secondaryPlay("endGame");
+    } else {
+      secondaryPlay("desertPyramid");
+    }
+
+
+    // When clicked on 'left', go to the left side desert.
+    $('.west').on("click", function(){
+      stop("desertPyramid");
+      stop("endGame");
+      
+      // Go to level 3
+      goToLevel('desert-west');
+    })
+
+    // When clicked on 'right', go to the right side desert (level 1)
+    $('.east').on("click", function(){
+        stop("desertPyramid");
+        stop("endGame");
+
+        // Go to level 1
+        goToLevel('desert-route');
+      })
+
+
+    if (getConfig(Config.PYRAMIDDOOR) == 1){
+      openDoor();
+    } else {
+    // When clicked on 'door', show a hint.
+      $('#door').on("click", function(){
+        if (isSelected("Key")) {
+          setConfig(Config.PYRAMIDDOOR, 1);
+          openDoor();
+          removeItem(Item.KEY);
+          log("It fits! You can now open the door and enter the pyramid anytime you want.");
+        } else {
+          log("The entrance is locked. I think we need a key.");
+        }
+      });
+    }
+
+
+  //interact with cactus
+  $('#cactus').on("click", function(){ 
+    log("Ouch!");
+  });
+
+});
+
+function openDoor() {
+    $("#door").removeClass("inspect");
+    $("#door").removeClass("interactable");
+    $("#door").addClass("north");
+    $("#door").unbind("click");
+    $("#door").click(function(){
+      stop("desertPyramid");
+      stop("endGame");
+      // doorSound.play;
+      primaryPlay("doorOpen");
+      goToLevel("pyramid-entrance");      
+    });
+}
+</script>
+
+

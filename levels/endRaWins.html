@@ -1,0 +1,65 @@
+<!-- HTML -->
+<img src="levels/img/ra.png" id="ra"/>
+<div id="ending">You have sacrificed your existance in favor of the land of the living - Anubis shall regenerate in his own domain and he shall not be kind to you or your dead wife. You saved the living world from an undead invasion that would have cost thousands of lives, but none shall ever know.
+</div>
+<input id="restart" type="submit" onclick="reset()" value="THE CYCLE CONTINUES">
+
+
+
+<!-- CSS -->
+<style>
+
+  #ra {
+    display:inline-block;
+    height: 77%;
+    width: 25%;
+    left: 4%;
+    top: 15%;
+    position: absolute;
+
+  }
+
+#ending {
+  
+display: inline-block;
+color: white;
+position: absolute;
+left: 33%;
+top: 10%;
+width: 60%;
+font-size: 25px;
+}
+
+
+#restart {
+    color: #fff;
+    background-color: #111;
+    padding: 20px;
+    cursor: pointer;
+    border: 1px solid #333;
+    position: absolute;
+    left: 33%;
+    top: 70%;
+    width: 60%;
+    font-size: 25px;
+}
+
+#restart:hover {
+    
+}
+
+
+
+</style>
+<!-- Javascript -->
+<script>
+
+secondaryPlay("credits");
+
+$("#restart").on("click",function(){
+    stop("credits");
+    reset();
+
+});
+
+</script>

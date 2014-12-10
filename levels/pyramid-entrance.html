@@ -1,0 +1,59 @@
+<!-- HTML -->
+<a id="door-left" class="inspect click area-1"/>
+<a id="door-middle" class="inspect click area-2"/>
+<a id="door-right" class="east click area-3"/>
+<a id="door-back" class="south click area-4"/>
+<!-- CSS -->
+<style>
+.game {
+    background: url(levels/img/pyramid-entrance.png) no-repeat;
+}
+
+.area-1 {
+    top: 55%;
+    left: 3%;
+    height: 41%;
+    width: 15%;
+}
+
+.area-2 {
+    top: 45%;
+    left: 43%;
+    height: 28%;
+    width: 14%;
+}
+
+.area-3 {
+    top: 38%;
+    left: 70%;
+    height: 53%;
+    width: 22%;
+}
+
+.area-4 {
+    top: 90%;
+    left: 36%;
+    height: 9%;
+    width: 24%;
+}
+</style>
+
+<!-- Javascript -->
+<script>
+setConfig(Config.ENTEREDPYRAMID, 1);
+
+secondaryPlay("pyramidRooms");
+
+    $("#door-left").click(function(){log("The gate is closed.")});
+    $("#door-middle").click(function(){log("I can not enter this room.")});
+    $("#door-right").click(function(){
+       // stop("pyramidRooms");
+        goToLevel("pyramid-room")
+
+    });
+    $("#door-back").click(function(){
+            stop("pyramidRooms");
+        goToLevel("desert-pyramid")
+
+    });
+</script>

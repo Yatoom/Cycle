@@ -1,0 +1,39 @@
+.selected {
+    border: 3px solid #fff !important;
+}
+
+#Paper, #Scroll, #Hammer, #Key, #Scepter, #Aegis, #Ember, #Lightning {
+    background-size: 100% 100% !important;
+}
+
+#Paper {
+    background: url("../levels/img/paper.png");
+}
+
+#Scroll {
+    background: url("../levels/img/scroll.png");
+}
+
+#Hammer {
+    background: url("../levels/img/hammer.png"); 
+}
+
+#Key {
+    background: url("../levels/img/key.png");
+}
+
+#Scepter {
+    background: url("../levels/img/scepter.png");
+}
+
+#Aegis {
+    background: url("../levels/img/aegis.png");  
+}
+
+#Ember {
+    background: url("../levels/img/ember.png");
+}
+
+#Lightning {
+    background: url("../levels/img/lightning.png");
+}

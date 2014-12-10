@@ -1,0 +1,116 @@
+<!-- HTML -->
+<a id="marketplace" class="west click area-1"></a>
+<a id="portal" class="north click area-2"></a>
+<img src="levels/img/portal.png" class="portal-anim pulse" />
+<a id="statue" class="click talk"></a>
+<a id="temple" class="click inspect"></a>
+
+<!-- CSS -->
+<style>
+  .game {
+    background: url(levels/img/greek-temple.png) no-repeat;
+  }
+  .area-1 {
+    top: 77%;
+    left: 0%;
+    height: 21%;
+    width: 13%;
+  }
+
+  .area-2 {
+    top: 37%;
+    left: 80%;
+    height: 21%;
+    width: 13%;
+    z-index: 1;
+  }
+
+  .portal-anim {
+    top: 43%;
+    left: 83%;
+    height: 11%;
+    width: 6%;
+    position: absolute;
+  }
+
+  #statue {
+    top: 9%;
+    left: 62%;
+    height: 57%;
+    width: 18%;
+  }
+
+  #temple {
+    top: 18%;
+    left: 4%;
+    height: 50%;
+    width: 52%;
+  }
+
+  .ask {
+    font-weight: bold;
+    cursor: pointer;
+  }
+</style>
+<!-- Javascript -->
+<script> 
+
+  secondaryPlay("greekTemple");
+
+  if (getConfig(Config.METZEUS) != 1) {
+    speak("A mysterious voice in your head", "What is this aura I sense around you? Mortal, come closer to my statue so that we may converse.");
+    setConfig(Config.METZEUS, 1);
+  }
+
+  $("#marketplace").click(function(){
+   stop("greekTemple");
+   goToLevel("greek-marketplace");
+ });
+
+  $("#portal").click(function(){
+  stop("greekTemple");    // stop music
+  goToLevel("desert-pyramid");
+});
+
+  $("#statue").click(function(){
+    if(hasItem(Item.AEGIS) || getConfig(Config.ENDGAMESTARTED) == 1){
+      speak("Statue of Zeus", "Good luck, mortal. We shall be watching");
+    } else if (hasItem(Item.SCEPTER)) {
+      speak("Statue of Zeus", "Bring my scepter to the Egyptian Desert for it will guide you to the Aegis. Good luck, mortal. We shall be watching");
+    } else if (hasItem(Item.LIGHTNING)){
+      speak("Statue of Zeus", "There is a cold aura surrounding you, mortal. I sense a darkness closing in on you as well as this land. Are you here to conquer it? My Aegis - it has been lost long ago. My disciple fell in a battle versus Casseopea; losing the shield in the process. No doubt it is buried somewhere under the sands. Should you wish to retrieve it, bring my Scepter - it will guide you towards my artefact - simply activate it when you feel you are near so that it may light your path.");
+      addItem(Item.SCEPTER);
+      
+      primaryPlay("objectFound");
+
+    } else {
+      speak("Statue of Zeus", "There is a coldness surrounding you, Mortal.  I sense a darkness that is threatening the land. Is this why you have come?" + "<br><br><a id='lightning' class='ask'>Ask about lightning.</a><br><a id='shield' class='ask'>Ask about the shield.</a>" );
+      $("#lightning").click(function(){
+        speak("Statue of Zeus", "If it is my lightning you seek I assure you, your frail vessel is unfit to handle my mastery of thunder, even a simple bolt from my strength would vaporize you on the spot." + "<br><br><a id='shield' class='ask'>Ask about the shield.</a>");
+        $("#shield").click(function(){
+          speak("Statue of Zeus", "The Aegis? Yes, my shield would be fit for one such as you - this dark aura surrounding the land needs to be purged. There is a complication however, my last disciple fell in battle long ago in a war versus Casseopea. The Aegis was lost with him. No doubt it is buried under the sand somewhere. Take my Scepter - it shall light the way to the Aegis - activate it when you feel you are near and it's light pulses shall bring you closer.");
+          addItem(Item.SCEPTER);
+
+          primaryPlay("objectFound");
+
+        });
+      });
+
+      $("#shield").click(function(){
+        speak("Statue of Zeus", "The Aegis? Yes, my shield would be fit for one such as you - this dark aura surrounding the land needs to be purged. There is a complication however, my last disciple fell in battle long ago in a war versus Casseopea. The Aegis was lost with him. No doubt it is buried under the sand somewhere. Take my Scepter - it shall light the way to the Aegis - activate it when you feel you are near and it's light pulses shall bring you closer." + "<br><br><a id='lightning' class='ask'>Ask about lightning.</a>");
+        $("#lightning").click(function(){
+          speak("Statue of Zeus", "If it is my lightning you seek I assure you, your frail vessel is unfit to handle my mastery of thunder, even a simple bolt from my strength would vaporize you on the spot.");
+        });
+        addItem(Item.SCEPTER);
+
+        primaryPlay("objectFound");
+
+      });
+    }
+  });
+
+$("#temple").click(function(){
+  speak("Statue of Zeus", "Hey! Stay away from my temple!");
+});
+
+</script>

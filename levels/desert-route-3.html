@@ -1,0 +1,164 @@
+<!-- HTML -->
+<a id="north" href="#N" class="north click area-1"></a>
+<a id="east" href="#E" class="east click area-2"></a>
+<a id="west" href="#W" class="west click area-3"></a>
+<a id="south" href="#S" class="south click area-4"></a>
+<img src="levels/img/cloud.png" class="cloud">
+
+<img src="levels/img/aegis.png" id="aegisProper">
+
+<img src="levels/img/aegis.png" id="aegisWrong">
+
+<!-- CSS -->
+<style>
+  /* Load background */
+  .game {
+    background: url(levels/img/desert-route-3.png) no-repeat;
+  }
+  /* Set areas */
+  .area-1 {
+    top: 26%;
+    left: 52%;
+    height: 20%;
+    width: 20%;
+  }
+  .area-2 {
+    top: 43%;
+    left: 82%;
+    height: 27%;
+    width: 18%;
+  }
+  .area-3 {
+    top: 53%;
+    left: 0%;
+    height: 29%;
+    width: 20%;
+  }
+  .area-4 {
+    top: 80%;
+    left: 35%;
+    height: 20%;
+    width: 20%;
+  }
+  /* Add cloud object */
+  .cloud {
+    position: absolute;
+    top: 0%;
+    left: -100%;
+    height: 100px;
+    animation: rightThenLeft 50s linear infinite;
+    -webkit-animation: rightThenLeft 50s linear infinite;
+  }
+  /* Animation for cloud */
+  @-webkit-keyframes rightThenLeft {
+    0% {
+      left: 0%;
+    }
+    50% {
+      left: 100%;
+    }
+    100% {
+      left: 0%;
+    }
+  }
+  @keyframes rightThenLeft {
+    0% {
+      left: 0%;
+    }
+    50% {
+      left: 100%;
+    }
+    100% {
+      left: 0%;
+    }
+  }
+  
+  #aegisProper{
+    height: 100px;
+    position: absolute;	
+    top: 46%;
+    left: 84%;
+    display:none;
+    opacity:0.5
+  } 
+  
+  #aegisWrong{
+    height: 100px;
+    position: absolute;
+    top: 49%;
+    left: 4%;
+    display:none;
+    opacity:0.5
+  } 
+  
+  
+</style>
+
+<!-- Javascript -->
+<script>  
+// OASIS PROGRESS
+if (getConfig(Config.OASISPROGRESS) == 2) {
+  setConfig(Config.OASISPROGRESS, 2);
+} else {
+  setConfig(Config.OASISPROGRESS, 0);
+}
+
+// SHIELD PROGRESS
+if (getConfig(Config.SHIELDPROGRESS) == 6) {
+  setConfig(Config.SHIELDPROGRESS, 7);
+} else {
+  setConfig(Config.SHIELDPROGRESS, 0);
+}
+
+secondaryPlay("wind");    //background music
+
+
+$("#north").click(function(){
+  goToLevel("desert-route-8");
+});
+
+$("#east").click(function(){
+  goToLevel("desert-route-4");
+});
+
+$("#south").click(function(){
+  goToLevel("desert-route-5");
+});
+
+$("#west").click(function(){
+  goToLevel("desert-route-2");
+});
+
+$(document).ready(function(){
+ $("#Scepter").click(function(){
+
+   if (!hasItem(Item.AEGIS)){
+  //you followed a sequence and are getting closer
+  if( getConfig(Config.SHIELDPROGRESS) > 0 ){
+
+    $("#aegisProper").fadeIn(3000);  	
+    setTimeout(function() {
+     $("#aegisProper").fadeOut(3000); 
+   }, 2000);
+    deselect();
+  //point to proper location
+}else{
+    //point back to the start area
+    log("The scepter lost the signal - It shakes heavily, looks like it is trying to return to where it initially found the signal for recalibration");
+
+    $("#aegisWrong").fadeIn(3000);  	
+    setTimeout(function() {
+     $("#aegisWrong").fadeOut(3000); 
+   }, 2000);
+
+
+ //   log("The scepter is at magnitude " + getConfig(Config.SHIELDPROGRESS) + "!");
+ deselect();
+}	
+}else{
+  log("The scepter has done it's job - the Aegis is mine!");
+  deselect();  
+}
+});
+});
+</script>

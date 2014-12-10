@@ -1,0 +1,157 @@
+<!-- HTML -->
+<a id="north" href="#N" class="north click area-1"></a>
+<a id="east" href="#E" class="east click area-2"></a>
+<a id="west" href="#W" class="west click area-3"></a>
+<a id="south" href="#S" class="south click area-4"></a>
+<a id="stone" class="inspect click area-5"></a>
+
+<img src="levels/img/cloud.png" class="cloud">
+<img src="levels/img/aegis.png" id="aegis">
+
+<!-- CSS -->
+<style>
+  /* Load background */
+  .game {
+    background: url(levels/img/desert-route.png) no-repeat;
+  }
+  /* Set areas */
+  .area-1 {
+    top: 18%;
+    left: 30%;
+    height: 20%;
+    width: 20%;
+  }
+  .area-2 {
+    top: 43%;
+    left: 82%;
+    height: 27%;
+    width: 18%;
+  }
+  .area-3 {
+    top: 47%;
+    left: 0%;
+    height: 20%;
+    width: 20%;
+  }
+  .area-4 {
+    top: 85%;
+    left: 35%;
+    height: 20%;
+    width: 20%;
+  }
+
+  .area-5 {
+    top: 63%;
+    left: 59%;
+    height: 19%;
+    width: 20%;
+  }
+  
+  #aegis{
+    height: 100px;
+    position: absolute;
+    top: 83%;
+    display:none;
+	opacity:0.5
+  }    
+
+  
+  /* Add cloud object */
+  .cloud {
+    position: absolute;
+    top: 0%;
+    left: -100%;
+    height: 100px;
+    animation: rightThenLeft 50s linear infinite;
+    -webkit-animation: rightThenLeft 50s linear infinite;
+  }
+  /* Animation for cloud */
+  @-webkit-keyframes rightThenLeft {
+    0% {
+      left: 0%;
+    }
+    50% {
+      left: 100%;
+    }
+    100% {
+      left: 0%;
+    }
+  }
+  @keyframes rightThenLeft {
+    0% {
+      left: 0%;
+    }
+    50% {
+      left: 100%;
+    }
+    100% {
+      left: 0%;
+    }
+  }
+</style>
+
+<!-- Javascript -->
+<script>  
+
+// OASIS PROGRESS
+setConfig(Config.OASISPROGRESS, 1);
+
+// SHIELD PROGRESS
+setConfig(Config.SHIELDPROGRESS, 1);
+
+
+//play music in the background
+secondaryPlay("wind");
+
+
+$("#north").click(function(){
+  goToLevel("desert-route-2");
+});
+
+$("#east").click(function(){
+  goToLevel("desert-route-5");
+});
+
+$("#south").click(function(){
+  goToLevel("desert-route-7");
+});
+
+// Return to pyramid
+$("#west").on("click", function(){
+
+  stop("wind"); //new setting - stop the bg music
+  
+  // Return to pyramid
+  goToLevel('desert-pyramid');
+
+}); 
+
+$("#stone").on("click", function(){
+  log("NESE... maybe they indicate a sequence of wind directions to navigate to the oasis?");
+});
+
+if (getConfig(Config.CLICKEDATROCK) != 1){
+  log("Hey! What is over there on the rock? Maybe I should inspect it for any hints.");
+  setConfig(Config.CLICKEDATROCK, 1);
+}
+
+$(document).ready(function(){
+
+  $("#Scepter").click(function(){  
+if (!hasItem(Item.AEGIS)) {
+      // fade in and after 2 seconds fade out again
+
+    $("#aegis").fadeIn(3000);  	
+		setTimeout(function() {
+      	$("#aegis").fadeOut(3000); 
+		}, 2000);
+   //log("The scepter is at magnitude " + getConfig(Config.SHIELDPROGRESS) + "!");
+    deselect();
+  
+    }else{
+	   log("The scepter has done it's job - the Aegis is mine!");
+	   deselect();  
+  }
+  });
+});
+</script>

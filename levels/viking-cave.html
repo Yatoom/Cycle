@@ -1,0 +1,103 @@
+<!-- HTML -->
+<a id="portal" class="north click area-1"></a>
+<a id="mountain" class="south click area-2"></a>
+<a id="box-1" class="click inspect area-3"></a>
+<a id="furnace" class="click inspect area-4"></a>
+<img src="levels/img/portal.png" class="portal-anim pulse" />
+
+<!-- CSS -->
+<style>
+.game {
+    background: url(levels/img/viking-cave.png) no-repeat;
+}
+.area-1 {
+    top: 29%;
+    left: 34%;
+    height: 26%;
+    width: 19%;
+    z-index: 1;
+}
+
+.area-2 {
+    top: 85%;
+    left: 45%;
+    height: 22%;
+    width: 16%;
+}
+.area-3 {
+    top: 81%;
+    left: 37%;
+    height: 13%;
+    width: 7%;
+}
+.area-4 {
+    top: 53%;
+    left: 57%;
+    height: 18%;
+    width: 12%;
+}
+.portal-anim {
+    top: 32%;
+    left: 37%;
+    height: 24%;
+    width: 14%;
+    position: absolute;
+}
+</style>
+<!-- Javascript -->
+<script>
+//variable to update instnatly when changing value on the server (change locally too)
+var foundit = 0;
+
+//update the variable if revisiting
+if(hasItem(Item.EMBER) || getConfig(Config.VILLAGERSHELPED, 1) == 1 ) {
+    foundit = 1;
+}
+
+
+// if( isAnyPlayingExcept("norseSerene")  ) { 
+
+//   //yes, so wait
+
+
+// }else{  //nothing else is playing
+
+//   Sound.norseSerene.play();  //play your sound
+// }
+
+secondaryPlay("norseSerene");
+
+
+//loop sound
+// Sound.norseSerene.addEventListener('ended', function() {
+//     this.currentTime = 0;
+//     this.play();
+//  }, false);
+
+
+$("#portal").click(function(){
+    stop("norseSerene");
+    goToLevel("greek-marketplace");
+});
+
+$("#mountain").click(function(){
+ // stop("norseSerene");
+    goToLevel("viking-mountain");
+
+});
+
+$("#box-1").click(function(){
+    log("You found a little note in this box. 'Did you know that Scandinavians developed primitive skis at least 6,000 years ago?'");
+});
+
+$("#furnace").click(function(){    
+
+    if(foundit == 1) {
+        log("I'm not sticking my hand in there again -it's hot in there!");
+    } else if(foundit == 0){
+        addItem(Item.EMBER);
+        foundit = 1;
+        log("You found a little flame in the furnace! While burning your hand in the process, of course.");
+    }
+});
+</script>

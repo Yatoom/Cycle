@@ -1,0 +1,384 @@
+<!-- HTML -->
+<img src="levels/img/anubis.png" id="anubis"/>
+<img src="levels/img/ra.png" id="ra"/>
+<a id="ra-overlay" class="click talk interactable"/>
+<a id="anubis-overlay" class="click talk  interactable"/>
+<img src="levels/img/aegis.png" id="aegis-shield"/>
+<img src="levels/img/undead-wife.png" id="wife" class="click talk interactable"/>
+<div class="bubbles"/>
+<div class="bubbles-2"/>
+<div class="bubbles-3"/>
+<div class="bubbles-4"/>
+<div class="bubbles-5"/>
+<div class="bubbles-6"/>
+<div class="magma-1 magma-pos-1"/>
+<div class="magma-2 magma-pos-1"/>
+<div class="magma-3 magma-pos-1"/>
+<div class="magma-1 magma-pos-2"/>
+<div class="magma-2 magma-pos-2"/>
+<div class="magma-3 magma-pos-2"/>
+<div class="magma-1 magma-pos-3"/>
+<div class="magma-2 magma-pos-3"/>
+<div class="magma-3 magma-pos-3"/>
+<div class="attack-1 attack" />
+<div class="attack-2 attack" />
+<div class="attack-3 attack" />
+<!-- CSS -->
+<style>
+    .game {
+        background: url("levels/img/underworld.png") no-repeat;
+    }
+
+    #wife {
+/*    top: 55%;
+    left: 9%;
+    height: 33%;
+    width: 5%;
+    top: 35%;*/
+    left: 57%;
+    height: 33%;
+    width: 5%;
+    position: absolute;
+    z-index: 5;
+    top: 43%;
+}
+
+#anubis {
+    top: 4%;
+    left: 57%;
+    height: 38%;
+    width: 11%;
+    position: absolute;
+}
+
+#anubis-overlay {
+    top: 4%;
+    left: 57%;
+    height: 38%;
+    width: 11%;
+    position: absolute;
+    z-index: 5;
+}
+#ra {
+    height: 42%;
+    width: 12%;
+    left: 36%;
+    top: 0%;
+    position: absolute;
+
+    display: none;
+}
+#ra-overlay {
+    height: 42%;
+    width: 12%;
+    left: 36%;
+    top: 0%;
+    position: absolute;
+    display: none;
+    z-index: 5;
+}
+#aegis-shield {
+    display: none;
+    top: 18%;
+    left: 34%;
+    height: 16%;
+    width: 9%;
+    position: absolute;
+}
+
+.bubbles, .bubbles-2, .bubbles-3 {
+    background-size: 100% 100% !important;
+    height: 30%;
+    width: 20%;
+    left: 50%;
+    top: 14%;
+    position: absolute;
+}
+
+.bubbles {
+    background: url('levels/img/dark-bubbles-1.png') 100% 100% no-repeat;
+    animation: magic 5s linear infinite;
+    -webkit-animation: magic 5s linear infinite;
+}
+
+.bubbles-2 {
+    background: url('levels/img/dark-bubbles-2.png') 100% 100% no-repeat;
+    animation: magic 4s linear infinite;
+    -webkit-animation: magic 4s linear infinite;
+}
+
+.bubbles-3 {
+    background: url('levels/img/dark-bubbles-3.png') 100% 100% no-repeat;
+    animation: magic 3s linear infinite;
+    -webkit-animation: magic 3s linear infinite;
+}
+
+.bubbles, .bubbles-2, .bubbles-3 {
+    background-size: 100% 100% !important;
+    height: 30%;
+    width: 20%;
+    left: 50%;
+    top: 14%;
+    position: absolute;
+}
+
+.bubbles-4, .bubbles-5, .bubbles-6 {
+    background-size: 100% 100% !important;
+    height: 30%;
+    width: 20%;
+    left: 60%;
+    top: 14%;
+    position: absolute;   
+}
+
+.bubbles, .bubbles-2, .bubbles-3, .bubbles-4, .bubbles-5, .bubbles-6 {
+    display: none;
+}
+
+.bubbles-4 {
+    background: url('levels/img/bubbles.png') 100% 100% no-repeat;
+    animation: magic 5s linear infinite;
+    -webkit-animation: magic 5s linear infinite;
+}
+
+.bubbles-5 {
+    background: url('levels/img/bubbles-2.png') 100% 100% no-repeat;
+    animation: magic 4s linear infinite;
+    -webkit-animation: magic 4s linear infinite;
+}
+
+.bubbles-6 {
+    background: url('levels/img/bubbles-3.png') 100% 100% no-repeat;
+    animation: magic 3s linear infinite;
+    -webkit-animation: magic 3s linear infinite;
+}
+
+.bubbles-4, .bubbles-5, .bubbles-6 {
+    animation-direction: reverse;
+}
+
+.magma-1 {
+    background: url('levels/img/magma-bubbles-1.png') 100% 100% no-repeat;
+    animation: steam 5s linear infinite;
+    -webkit-animation: steam 5s linear infinite;
+}
+
+.magma-2 {
+    background: url('levels/img/magma-bubbles-2.png') 100% 100% no-repeat;
+    animation: steam 4s linear infinite;
+    -webkit-animation: steam 4s linear infinite;
+}
+
+.magma-3 {
+    background: url('levels/img/magma-bubbles-3.png') 100% 100% no-repeat;
+    animation: steam 3s linear infinite;
+    -webkit-animation: steam 3s linear infinite;
+}
+
+.magma-pos-1 {
+    height: 77%;
+    width: 20%;
+    left: 19%;
+    top: 14%;
+    position: absolute;
+}
+
+.magma-pos-2{
+    height: 77%;
+    width: 20%;
+    left: -2%;
+    top: -2%;
+    position: absolute;   
+}
+
+.magma-pos-3 {
+    height: 77%;
+    width: 20%;
+    left: 56%;
+    top: 30%;
+    position: absolute;
+}
+
+/* Animation for steam */
+@-webkit-keyframes steam {
+    0% {opacity:0;-webkit-transform:translateY(0) }
+    70% {opacity:1;-webkit-transform:translateY(-200px)}
+    100% {opacity:0;-webkit-transform:translateY(-250px)}
+}
+@keyframes steam {
+    0% {opacity:0;transform:translateY(0) }
+    70% {opacity:1;transform:translateY(-200px)}
+    100% {opacity:0;transform:translateY(-250px)}
+}
+
+.attack {
+    background: url("levels/img/circle.png");
+    background-size: 100% 100% !important;
+    height: 40%;
+    width: 19%;
+    left: 43%;
+    top: 1%;
+    position: absolute;
+    display: none;
+}
+
+.attack-1 {
+    animation: beam 3s linear infinite;
+    -webkit-animation: beam 3s linear infinite;
+    opacity: 0.7;
+}
+
+.attack-2 {
+    animation: beam 4s linear infinite;
+    -webkit-animation: beam 4s linear infinite;
+    opacity: 0.7;
+}
+
+.attack-3 {
+    animation: beam 5s linear infinite;
+    -webkit-animation: beam 5s linear infinite;
+    opacity: 0.7;
+}
+</style>
+<!-- Javascript -->
+
+<script>
+    var raHasAppeared = false;
+    var talkingRa = 0;
+    var speakAnubis = 0;
+    var talkwife = 0;
+    var choicePossible = 0;
+    var clicked = 0;
+  //   var sound = new Audio("levels/Sounds/First_Sighting.ogg");
+  //   sound.play();
+
+  //   //Loop the sound if it should be playing.
+  // sound.addEventListener('ended', function() {
+  //     this.currentTime = 0;
+  //     this.play();
+  //   }, false);
+  // sound.play();
+
+  secondaryPlay("endGame");
+
+  $("#anubis-overlay").click(function(){
+
+    if(isSelected("Lightning")) { 
+        //tossing lightning on Ra
+
+        primaryPlay("lightning");   //lightning chugged
+        deselect();
+         stop('endGame');
+        $(".game").fadeOut(5000, function(){
+            goToLevel("endRaWins");
+        });
+
+    }else if(!raHasAppeared){
+
+        speak("Anubis", "The Chosen One has returned - why is your veil shattered? You do not appear human any longer. No matter, it is only a matter of time until Ra comes and he shall be severely weakened in my realm. This battle will soon be over.");
+
+        if(clicked == 0) {
+            clicked = 1;        //run this code only once
+            setTimeout(function(){
+            primaryPlay("thunder");     //massive intro to Ra
+            $("#ra-overlay").fadeIn(1000);
+            $("#ra").fadeIn(1000);
+            $("#aegis-shield").fadeIn(1000);
+            raHasAppeared = true;
+
+
+            $("#ra-overlay").addClass("lightning-match");
+            $("#anubis-overlay").addClass("lightning-match");
+            speak("Ra", "ANUBIS - you have disrupted the balance for too long; I shall bring this malicious endeavour to an end; face my wrath!");
+            setTimeout(function(){                        
+                $(".bubbles, .bubbles-2, .bubbles-3, .bubbles-4, .bubbles-5, .bubbles-6, .attack").fadeIn();
+            }, 1000);
+        }, 10000);
+        }
+
+        
+
+    } else {
+
+        if(speakAnubis == 0 && raHasAppeared) {
+            speak("Anubis", "Ra, I see you have fallen for my little ploy; welcome to my domain, where I REIGN SUPREME. Face me and be annihilated.");
+        speakAnubis = 1;    //progress into chat
+    }else if(speakAnubis == 1 && raHasAppeared) {
+
+    //spaek 2 anbis
+    speak("Anubis", "You fools, I reign supreme here, you don't stand a chance! That flimsy shield of yours won't make a difference, Ra!");
+    speakAnubis = 2;    //progress into chat
+
+}else if(speakAnubis == 2 && raHasAppeared) {
+   speak("Anubis", "Surrender to me, insects! The dead will walk the earth once more!");
+    //speakk anbuis 3
+}
+}
+
+});
+
+$("#ra-overlay").click(function(){
+
+    if(isSelected("Lightning")) { 
+        //tossing lightning on Ra
+
+        primaryPlay("lightning");   //lightning chugged
+        stop('endGame');
+        deselect();
+        $(".game").fadeOut(5000, function(){
+            goToLevel("endAnubisWins")
+        });
+
+
+    }else{
+
+        if(talkingRa == 0) {
+          speak("Ra", "You won't get away with this, Anubis - I have brought a Champion along!!");
+          talkingRa = 1;
+      }else if(talkingRa == 1) {
+
+        speak("Ra", "What are you waiting for, Hero? Shift the battle in my favor - strike him with Lightning!!");
+        talkingRa = 2;
+        //talk 2
+
+    }else if(talkingRa == 2) {
+        speak("Ra", "I can't hold out much longer! Assist me Hero. Undead or not - you must restore balance to the world!");
+        //talk 3
+
+    }
+}
+});
+
+//make lightning castable on either Ra or Anubis
+
+
+
+$("#wife").click(function(){
+
+    if(talkwife == 0) {
+
+        speak("Your beloved wife", "Hello, husband. You have returned to me! I am so happy to see you! You don't remember? We died during the dark storm..");
+        //talk 1
+        talkwife = 2;
+
+    }else if(talkwife == 1){    //never true (useful placeholder for text)
+
+        //not used
+    // speak("Your beloved wife", "Hello, husband. You have returned to me! I am so happy to see you! You don't remember? We died during the dark storm..");
+        //talk 2
+   //     talkwife = 2;
+}else if(talkwife == 2){
+
+ speak("Your beloved wife","Anubis chose you to bring back Ra in an attempt for us undead to return to the land of the living, oh how I miss home.. You must help him to bring down Ra! Cast your lightning upon him so that we may 'live' a happy live again back home.");
+ talkwife = 3;
+}else if (talkwife == 3){
+
+    speak("Your beloved wife who seems to really fear Anubis a whole lot","If you aid Ra now we will both be betraying Anubis! - Nothing good for us can come of this. Do you really care so much about the balance that you would have us suffer the wrath of Anubis? Please, husband, think carefully!");
+    talkwife = 4;
+}else if (talkwife == 4){
+
+ speak("Your beloved wife"," If you shoot Anubis with that bolt Ra will simply abandon you and close all the portals.... Don't condemn us all for the sake of the living! What have they ever done for us??!");
+}
+
+});
+</script>

@@ -1,0 +1,71 @@
+<!-- HTML -->
+<a id="portal" class="click area-1"/>
+<a id="east" class="east click area-2"/>
+<img src="levels/img/portal.png" class="portal-anim pulse" />
+<img id="block" src="levels/img/hiero3.png" class="block fadePulse" />
+
+<!-- CSS -->
+<style>
+.game {
+    background: url(levels/img/desert-portal.png) no-repeat;
+}
+.area-1 {
+    top: 25%;
+    left: 44%;
+    height: 25%;
+    width: 17%;
+    z-index: 1;
+}
+
+.area-2 {
+    top: 78%;
+    left: 84%;
+    height: 21%;
+    width: 16%;
+}
+
+.portal-anim {
+    top: 26%;
+    left: 48%;
+    height: 21%;
+    width: 11%;
+    position: absolute;
+}
+
+.block {
+    top: 50%;
+    left: 34%;
+    height: 23%;
+    width: 41%;
+    position: absolute;
+}
+
+</style>
+
+<!-- Javascript -->
+<script>
+secondaryPlay("desertPyramid");
+
+if (getConfig(Config.SPOKENWITHRA) == 1){
+    $("#portal").addClass("north");
+    $("#portal").click(function(){
+        stop("desertPyramid");
+        if (getConfig(Config.VILLAGERSHELPED) == 1){
+            goToLevel("viking-ship-2");
+        } else {
+            goToLevel("viking-ship");
+        }
+    });
+    $("#block").hide();
+} else {
+    $("#portal").addClass("inspect")
+    $("#portal").click(function(){log("Something seems to block this portal...")});
+}
+
+
+
+$("#east").click(function(){
+    goToLevel("desert-altar");
+});
+
+</script>

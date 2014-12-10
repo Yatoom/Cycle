@@ -1,0 +1,66 @@
+<!-- HTML -->
+<img src="levels/img/ankh.png" id="anubis"/>
+<div id="ending">You wake up in a desert - there is a pyramid before you. How did you get here? You cannot recall... You feel your pockets, there is a strange scroll with an ankh-symbol on it, and some text.. "Find Her".... Find who? You feel lost. In any case there's no sense standing around here. Time to find some answers...
+</div>
+<input id="start" type="submit"  value="THE CYCLE BEGINS">
+
+
+
+<!-- CSS -->
+<style>
+
+  #anubis {
+    display:inline-block;
+    height: 75%;
+    width: 25%;
+    left: 4%;
+    top: 15%;
+    position: absolute;
+    opacity: 0.8;
+
+  }
+
+#ending {
+  
+display: inline-block;
+color: white;
+position: absolute;
+left: 33%;
+top: 10%;
+width: 60%;
+font-size: 25px;
+}
+
+
+#start {
+    color: #fff;
+    background-color: #111;
+    padding: 20px;
+    cursor: pointer;
+    border: 1px solid #333;
+    position: absolute;
+    left: 33%;
+    top: 70%;
+    width: 60%;
+    font-size: 25px;
+}
+
+#start:hover {
+    background-color: #222;
+}
+
+
+</style>
+<!-- Javascript -->
+<script>
+
+secondaryPlay("intro");
+
+$("#start").on("click",function(){
+    stop("intro");
+    goToLevel('desert-pyramid');
+
+    //window.location.reload();
+});
+
+</script>

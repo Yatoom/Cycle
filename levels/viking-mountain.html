@@ -1,0 +1,144 @@
+<!-- HTML -->
+<a id="cave" class="north click area-1"></a>
+<a id="ship" class="south click area-2"></a>
+<a id="blacksmith" class="talk click area-3"></a>
+<img src="levels/img/thor.png" id="thor" class="talk click"/>
+<a id="anvil" class="click interactable inspect area-4 hammer-match"></a>
+
+
+<!-- CSS -->
+<style>
+    .game {
+        background: url(levels/img/viking-mountain.png) no-repeat;
+    }
+    .area-1 {
+        top: 33%;
+        left: 50%;
+        height: 12%;
+        width: 8%;
+    }
+
+    .area-2 {
+        top: 85%;
+        left: 83%;
+        height: 22%;
+        width: 16%;
+    }
+    .area-3 {
+        top: 30%;
+        left: 62%;
+        height: 19%;
+        width: 5%;
+    }
+    .area-4 {
+        top: 40%;
+        left: 57%;
+        height: 9%;
+        width: 6%;
+        z-index: 1;
+    }
+    #thor {
+        height: 40%;
+        width: 14%;
+        left: 30%;
+        top: 3%;
+        position: absolute;
+        display: none;
+    }
+</style>
+
+<!-- Javascript -->
+<script>
+
+// if( isAnyPlayingExcept("norseSerene")  ) { 
+
+//   //yes, so wait
+
+
+// }else{  //nothing else is playing
+
+//   Sound.norseSerene.play();  //play your sound
+// }
+
+secondaryPlay("norseSerene");
+
+
+//music loop
+// Sound.norseSerene.addEventListener('ended', function() {
+//   this.currentTime = 0;
+//  this.play();
+// }, false);
+
+
+$("#cave").click(function(){
+  //   stop("norseSerene");
+    goToLevel("viking-cave");
+   
+	//stop background music when going to cave
+});
+
+$("#ship").click(function(){
+        stop("norseSerene");
+        stop("portal");
+        stop("puzzleSolved");
+         if (getConfig(Config.VILLAGERSHELPED) == 1){        
+            goToLevel("viking-ship-2");
+        } else {
+            goToLevel("viking-ship");
+        }
+    });
+
+$("#blacksmith").click(function(){
+    speak("Blacksmith Alrik", "Hello! This is supposed to the sacred Anvil, granted to us from Asgaard - they say the dwarf Sindri used it to shape Mjolnir - the legendary hammer of Thor. I don't know - looks like a plain old anvil to me.");
+});
+
+
+$("#anvil").click(function(){
+    if(isSelected("Hammer") && getConfig(Config.SUMMONEDTHOR) != 1){
+        setConfig(Config.SUMMONEDTHOR, 1);
+        stop("puzzleSolved");
+
+        primaryPlay('portal');
+
+        $("#thor").fadeIn(3000);
+        deselect();
+    } else if(getConfig(Config.SUMMONEDTHOR) == 1) {
+        log("Guess it wasn't just an ordinary anvil at all...");
+    } else {
+        log("A plain old anvil.");
+    }
+});
+
+
+if(getConfig(Config.SUMMONEDTHOR) == 1){
+    $("#thor").show();
+}
+
+$("#thor").click(function(){
+
+    if (getConfig(Config.TRADEDHAMMERWITHTHOR) == 1){
+        speak ("Thor", "This bolt seems a little unstable but it gets the job done - be sure to grip it firmly and let it recharge after you chug it at something, else you might electrocute yourself. Good luck, mortal!")
+    } else if(getConfig(Config.VILLAGERSHELPED) == 1) {
+        if (isSelected("Hammer")){
+            removeItem(Item.HAMMER);
+            stop("portal");
+            stop("puzzleSolved");       
+
+            primaryPlay("objectFound");
+
+            addItem(Item.LIGHTNING);
+            speak("Thor", "This bolt seems a little unstable but it gets the job done - be sure to grip it firmly and let it recharge after you chug it at something, else you might electrocute yourself. Good luck, mortal!");            
+            setConfig(Config.TRADEDHAMMERWITHTHOR, 1);
+        } else {
+            speak("Thor", "I see you have come to the aid of my people, for this I shall return the favor, you seek a lightning bolt? - I shall provide you with the power of lightning; hand me that poor excuse of a hammer and let me work this anvil for a moment.");
+            $("#thor").addClass("interactable");
+            $("#thor").addClass("hammer-match");
+        }
+    } else if(getConfig(Config.SPOKENWITHTHOR)== 1){
+        speak("Thor", "You seek my lightning but I do not see a reason to trust you. Seek out my people and aid them In their endevaours and I shall consider your request.");
+    } else {
+        speak("Thor", "Who dares mock the depiction of Mjolnir? And what is this aura I sense about you? Speak, mortal...");
+        setConfig(Config.SPOKENWITHTHOR, 1);
+    }
+});
+</script>

@@ -1,0 +1,128 @@
+<!-- HTML -->
+<a id="north" class="click north"/>
+<a id="west" class="click west"/>
+<a id="east" class="click east"/>
+<a id="south" class="click south"/>
+
+<img src="levels/img/aegis.png" id="aegisProper">
+
+<img src="levels/img/aegis.png" id="aegisWrong">
+
+<!-- CSS -->
+<style>
+  .game {
+    background: url(levels/img/desert-route-6.png) no-repeat;
+  }
+  #north {
+    top: 31%;
+    left: 41%;
+    height: 14%;
+    width: 12%;
+  }
+
+  #west {
+    top: 65%;
+    left: 0%;
+    height: 14%;
+    width: 9%;
+  }
+
+  #east {
+    top: 65%;
+    left: 91%;
+    height: 14%;
+    width: 9%;
+  }
+
+  #south {
+    top: 86%;
+    left: 37%;
+    height: 14%;
+    width: 11%;
+  }
+
+  #aegisProper{
+    height: 100px;
+    position: absolute;	
+    top: 53%;
+    left: 1%;
+    display:none;
+    opacity:0.5
+  } 
+  
+  #aegisWrong{
+    height: 100px;
+    position: absolute;
+    top: 56%;
+    left: 89%;
+    display:none;
+    opacity:0.5
+  } 
+  
+</style>
+
+<!-- Javascript -->
+<script>
+// OASIS PROGRESS [RESET]
+setConfig(Config.OASISPROGRESS, 0);
+
+// SHIELD PROGRESS
+if (getConfig(Config.SHIELDPROGRESS) == 4) {
+  setConfig(Config.SHIELDPROGRESS, 5);
+} else {
+  setConfig(Config.SHIELDPROGRESS, 0);
+}
+
+$("#north").click(function(){
+  goToLevel("desert-route-4");
+});
+
+$("#east").click(function(){
+  goToLevel("desert-route");
+});
+
+$("#south").click(function(){
+  goToLevel("desert-route-9");
+});
+
+$("#west").click(function(){
+  goToLevel("desert-route-5");
+});
+
+
+secondaryPlay("wind");
+
+
+  $(document).ready(function(){
+   $("#Scepter").click(function(){
+  //you followed a sequence and are getting closer
+  
+  if (!hasItem(Item.AEGIS)){
+    if( getConfig(Config.SHIELDPROGRESS) > 0 ){
+
+      $("#aegisProper").fadeIn(3000);  	
+      setTimeout(function() {
+      	$("#aegisProper").fadeOut(3000); 
+      }, 2000);
+      deselect();
+  //point to proper location
+}else{
+    //point back to the start area
+    log("The scepter lost the signal - It shakes heavily, looks like it is trying to return to where it initially found the signal for recalibration");
+
+    $("#aegisWrong").fadeIn(3000);  	
+    setTimeout(function() {
+     $("#aegisWrong").fadeOut(3000); 
+   }, 2000);
+
+
+ //   log("The scepter is at magnitude " + getConfig(Config.SHIELDPROGRESS) + "!");
+ deselect();
+}	
+}else{
+  log("The scepter has done it's job - the Aegis is mine!");
+  deselect();  
+}
+});
+ });
+</script>

@@ -1,0 +1,115 @@
+<!-- HTML -->
+<a id="door" class="click west"/>
+<a id="sarcophagus" class="click inspect interactable lightning-match"/>
+<img id="isis" src="levels/img/isis.png" class="talk click interactable lightning-match"/>
+<div class="bubbles"/>
+<div class="bubbles-2"/>
+<div class="bubbles-3"/>
+<img src="levels/img/portal.png" id="explosion"/>
+<!-- CSS -->
+<style>
+.game {
+    background: url("levels/img/pyramid-room.png");
+}
+
+#door {
+    top: 49%;
+    left: 0%;
+    height: 51%;
+    width: 24%;
+}
+
+#sarcophagus {
+    top: 37%;
+    left: 36%;
+    height: 37%;
+    width: 9%;
+    z-index: 3;
+}
+
+#isis {
+    top: 27%;
+    left: 60%;
+    height: 51%;
+    width: 12%; 
+    z-index: 3;
+}
+
+.bubbles, .bubbles-2, .bubbles-3 {
+    background-size: 100% 100% !important;
+    height: 31%;
+    width: 20%;
+    left: 50%;
+    top: 42%;
+    position: absolute;
+}
+
+.bubbles {
+    background: url('levels/img/dark-bubbles-1.png') 100% 100% no-repeat;
+    animation: magic 5s linear infinite;
+    -webkit-animation: magic 5s linear infinite;
+}
+
+.bubbles-2 {
+    background: url('levels/img/dark-bubbles-2.png') 100% 100% no-repeat;
+    animation: magic 4s linear infinite;
+    -webkit-animation: magic 4s linear infinite;
+}
+
+.bubbles-3 {
+    background: url('levels/img/dark-bubbles-3.png') 100% 100% no-repeat;
+    animation: magic 3s linear infinite;
+    -webkit-animation: magic 3s linear infinite;
+}
+
+#explosion {
+    position: absolute;
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    top: 39%;
+    left: 45%;
+    height: 30%;
+    width: 15%;
+    z-index: 3;
+}
+</style>
+
+<!-- Javascript -->
+<script>
+
+secondaryPlay("pyramidRooms");
+
+var talk1 = 0;
+$("#door").click(function(){
+    goToLevel("pyramid-entrance");
+});
+
+$("#isis").click(function(){
+    if (isSelected("Lightning")) {
+        speak("Isis", "FOOL - do you REALLY think that your weak body has any strenght that is not my OWN? This veil upon you is the only thing keeping you standing - and I can take it away from you just as easily. That silly bolt of yours will do you no good!");
+        deselect();
+    } else if(talk1 == 1 || getConfig(Config.SPOKENWITHISIS, 1) == 1){ 
+        speak("Isis", "Go outside and strike him down! My dark magic will keep him busy for a while longer... Go now or I shall strip this veil from you and reveal your true nature, Undead. You have died long ago - the only reason you walk this earth is because WE allow it. Anubis will have words with you once we have dealt with Ra. Don't even think about betraying us; it will cost you dearly. And your dead wife...");
+    }else{
+        speak("Isis", "Hello again, chosen undead! I see you have succeeded in your mission to bring Ra back to us, good - very good. Undead? Yes - the only reason you still have flesh around you is because of my dark sorcery, it really did trick everyone didn't it? Even Ra thought you some sort of champion. Fools.. Now that he has returned we can strike him down together and finally prove our alligiance to Anubis - Master of the Underworld!");
+        talk1 = 1;
+        setConfig(Config.SPOKENWITHISIS, 1);        //set after talking to her once (no lightning bolt)
+    }
+    
+    
+});
+
+$("#sarcophagus").click(function(){
+    if (isSelected("Lightning")) {
+        speak("Isis", "NO, WHAT HAVE YOU DONE! YOU FOOL, YOU BROKE THE LINK! MY CHANNEL HAS BECOME UNSTABLE YOU IMBICILE!");
+        deselect();
+                   primaryPlay("lightning");
+        $("#explosion").addClass("explosion");
+        setTimeout(function(){
+            stop("pyramidRooms");
+            goToLevel("underworld")}, 5000);
+    } else {
+        log("Looks like Isis is using the pharaoh's body as a catalyst for her power!");
+    }
+});
+</script>

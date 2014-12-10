@@ -1,0 +1,144 @@
+
+<!-- HTML -->
+<a id="portal" class="west click area-1"/>
+<a id="puzzle" class="east click area-2"/>
+<a id="altar" class="inspect click area-3 interactable scroll-match"/>
+<img src="levels/img/ra.png" id="ra"/>
+<a id="ra-overlay" class="click talk"/>
+<img src="levels/img/aegis.png" id="aegis-shield"/>
+
+<!-- CSS -->
+<style>
+.game {
+    background: url(levels/img/desert-altar.png) no-repeat;
+}
+.area-1 {
+    top: 71%;
+    left: 0%;
+    height: 23%;
+    width: 17%;
+}
+
+.area-2 {
+    top: 78%;
+    left: 84%;
+    height: 21%;
+    width: 16%;
+}
+
+.area-3 {
+    top: 46%;
+    left: 36%;
+    height: 20%;
+    width: 20%;
+}
+
+#ra {
+    height: 65%;
+    width: 19%;
+    left: 4%;
+    top: 5%;
+    position: absolute;
+    display: none;
+}
+#ra-overlay {
+    height: 65%;
+    width: 19%;
+    left: 4%;
+    top: 5%;
+    position: absolute;
+    display: none;
+    z-index: 2;
+}
+#aegis-shield {
+    display: none;
+    top: 32%;
+    left: 2%;
+    height: 23%;
+    width: 13%;
+    position: absolute;
+}
+
+</style>
+
+<!-- Javascript -->
+<script>
+$(document).ready(function(){
+
+    //background music
+
+    secondaryPlay("desertPyramid");
+
+if (getConfig(Config.ENDGAMESTARTED) == 1 && getConfig(Config.ENTEREDPYRAMID) != 1){
+    $("#aegis-shield").show();
+}
+
+
+
+
+$("#portal").click(function(){
+    goToLevel("desert-portal");
+});
+$("#puzzle").click(function(){
+
+    stop("desertPyramid");
+    goToLevel("desert-west");
+});
+
+
+//EVENT HANDLER FOR ALTAR INTERACTIONS
+        $( "body" ).on( "click", "#altar", function() {
+        //if Ra stands next to the altar [IMPLIES SCROLL IS GONE]
+        if (getConfig(Config.RA) == 1){ 
+            //you know it was him
+            log("Seems like this altar was used to worship Ra, god of Creation and Sunlight.") 
+        }else if(isSelected("Scroll")){          //if he was not standing there, and you use the scroll on the altar
+
+            //write down the action
+            log("I quickly scrabbled some hieroglyphs in the sand, when suddenly... as if it were the noise of thunder a forma appeared, and when it became clear, I saw, and behold, the almighty Ra!");
+             primaryPlay("portal");   //play summon sound
+            $("#ra, #ra-overlay").fadeIn(3000); //3000 miliseconds duration and get ra to come
+            deselect(); //deselect scroll
+            removeItem(Item.SCROLL);        //remove it
+            setConfig(Config.RA, 1);        //config it
+
+
+    }else{      //ra not there, Scroll not selected
+
+       log("An altar basked in sunlight. This looks like a worship site for a sun god of some kind.")
+   }
+});
+
+
+//LET RA APPEAR IF HE SHOULD BE THERE
+if (getConfig(Config.RA) == 1 && getConfig(Config.ENTEREDPYRAMID) != 1){
+    $("#ra, #ra-overlay").css("display", "block");
+    $("#ra-overlay").removeClass("interactable");
+    }
+
+
+
+//EVENT HANDLER FOR ACTIONS WITH RA
+$("#ra-overlay").click(function(){
+    if (hasItem(Item.KEY)){
+        speak("Ra", "Go and unlock the doorway, mortal - I shall follow and divert the darkness while you progress through. The Aegis will protect me")
+    } else if (hasItem(Item.AEGIS) == 1 && hasItem(Item.LIGHTNING)){
+        speak("Ra", "You have found the artifacts, mortal. While you were busy collecting them I took precautions for the battle to come. Provide me with the Aegis and keep the Bolt - you shall need it for whatever lies inside the Pyramid. Take this keystone, it will unlock the entrance, but beware, for there is surely an evil lurking within.");
+        setConfig(Config.ENDGAMESTARTED, 1);
+        removeItem(Item.AEGIS);
+        addItem(Item.KEY);
+        $("#aegis-shield").show();
+        primaryPlay("victory");
+    } else if (getConfig(Config.SPOKENWITHRA) == 1){
+        speak("Ra", "Seek the godly power of Lightning and return to me with the Aegis, we shall lay siege upon the pyramid and stop this darkness together.");
+    } else {
+        speak("Ra", "Mortal, you have something peculiar about you - I fear the darkness already has taken hold around us. We must seek strength to defend and retaliate against this threat. Seek out two artifacts of legend, they will be our salvation. You must arm yourself with a godly power - the elemental Lightning Bolt should be potent enough yet weak enough for you to control. As for me - I require the Aegis of Zeus to come to my defense against the dark magics coming from the Pyramid. Go west, through the portal - I will drop the safeguard for you. Seek out the gods of old...");
+        setConfig(Config.SPOKENWITHRA, 1);
+    }
+
+
+});
+
+});
+
+</script>

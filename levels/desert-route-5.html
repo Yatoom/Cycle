@@ -1,0 +1,150 @@
+<!-- HTML -->
+<a id="north" class="click north"/>
+<a id="west" class="click west"/>
+<a id="east" class="click east"/>
+<a id="south" class="click south"/>
+
+<img src="levels/img/aegis.png" id="aegisProper">
+
+<img src="levels/img/aegis.png" id="aegisWrong">
+
+<!-- CSS -->
+<style>
+.game {
+  background: url(levels/img/desert-route-5.png) no-repeat;
+}
+#north {
+    top: 17%;
+    left: 37%;
+    height: 12%;
+    width: 10%;
+}
+
+#west {
+    top: 32%;
+    left: 0%;
+    height: 19%;
+    width: 10%;
+}
+
+#east {
+    top: 62%;
+    left: 90%;
+    height: 19%;
+    width: 10%;
+}
+
+#south {
+    top: 85%;
+    left: 40%;
+    height: 15%;
+    width: 14%;
+}
+
+
+  #aegisProper{
+    height: 100px;
+    position: absolute;	
+top: 17%;
+left: 47%;
+    display:none;
+	opacity:0.5
+  } 
+  
+    #aegisWrong{
+    height: 100px;
+    position: absolute;
+top: 52%;
+left: 1%;
+    display:none;
+	opacity:0.5
+  } 
+  
+  
+</style>
+
+<!-- Javascript -->
+<script>
+//background music
+secondaryPlay("wind");
+ 
+
+// OASIS PROGRESS
+if (getConfig(Config.OASISPROGRESS) == 2) {
+  setConfig(Config.OASISPROGRESS, 3);
+} else {
+  setConfig(Config.OASISPROGRESS, 0);
+}
+
+// SHIELD PROGRESS
+if (getConfig(Config.SHIELDPROGRESS) == 5) {
+  setConfig(Config.SHIELDPROGRESS, 6);
+} else {
+  setConfig(Config.SHIELDPROGRESS, 0);
+}
+
+  $("#north").click(function(){
+    goToLevel("desert-route-3");
+  });
+
+  $("#east").click(function(){
+    if (getConfig(Config.OASISPROGRESS) == 3) {
+
+    stop("wind");   //moving to new location with otehr secondary play -- stop this one
+
+  primaryPlay("puzzleSolved");    //victory sound
+
+
+
+      goToLevel("desert-oasis");
+    } else {
+      goToLevel("desert-route-6");
+    }
+  });
+  
+  //restart background sound when done
+
+
+
+  $("#south").click(function(){
+    goToLevel("desert-route-8");
+  });
+
+  $("#west").click(function(){
+    goToLevel("desert-route");
+  });
+
+
+$(document).ready(function(){
+   $("#Scepter").click(function(){
+  //you followed a sequence and are getting closer
+  
+    if (!hasItem(Item.AEGIS)){
+  if( getConfig(Config.SHIELDPROGRESS) > 0 ){
+  
+      $("#aegisProper").fadeIn(3000);  	
+		setTimeout(function() {
+      	$("#aegisProper").fadeOut(3000); 
+		}, 2000);
+  deselect();
+  //point to proper location
+  }else{
+    //point back to the start area
+     log("The scepter lost the signal - It shakes heavily, looks like it is trying to return to where it initially found the signal for recalibration");
+  
+    $("#aegisWrong").fadeIn(3000);  	
+		setTimeout(function() {
+      	$("#aegisWrong").fadeOut(3000); 
+		}, 2000);
+  
+  
+ //   log("The scepter is at magnitude " + getConfig(Config.SHIELDPROGRESS) + "!");
+    deselect();
+	}	
+    }else{
+	   log("The scepter has done it's job - the Aegis is mine!");
+	   deselect();  
+  }
+  });
+});
+</script>
