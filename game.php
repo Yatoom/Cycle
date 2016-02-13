@@ -59,7 +59,7 @@
 </div>
 
 <div class="footer">
-  A project by Kevin Cleijne, Jeroen van Hoof, Joep KT, Twan van Schijndel, and Guus van der Weerd.
+  A project by Kevin C, Jeroen v. H, Joep KT, Twan v. S, and Guus v. d. W.
 </div>
 
 
