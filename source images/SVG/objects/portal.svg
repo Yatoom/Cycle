@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="172.71875"
+   height="190.09375"
+   id="svg4526"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="portal.svg"
+   inkscape:export-filename="/home/jvhoof/Dropbox/Games for design and play/PROJECT FOLDER/Assets/Backgrounds/portal.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
+  <defs
+     id="defs4528" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="282.87712"
+     inkscape:cy="94.249614"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1600"
+     inkscape:window-height="843"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata4531">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-288.64975,-437.32375)">
+    <g
+       transform="translate(-479.53775,55.854998)"
+       id="g4505">
+      <path
+         inkscape:connector-curvature="0"
+         id="path28873"
+         d="m 772.33266,562.17225 141.78162,9.11329 26.51781,-73.63549 -24.3964,-95.87195 -60.81403,-20.04927 -81.67471,41.55666 -5.30355,72.5419 z"
+         style="fill:#501644;stroke:#501644;stroke-width:0.50261301px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path28873-3"
+         d="m 796.84215,554.6823 109.77478,7.05595 20.53142,-57.01245 -18.88892,-74.22911 -47.0854,-15.5232 -63.23689,32.17537 -4.10627,56.16576 z"
+         style="opacity:0.2;fill:#000000;stroke:#501644;stroke-width:0.38914949px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path28873-3-0"
+         d="m 815.89931,535.83931 77.75244,4.99764 14.54217,-40.38135 -13.37883,-52.57573 -33.35016,-10.99492 -44.79003,22.78948 -2.90846,39.78164 z"
+         style="opacity:0.2;fill:#000000;stroke:#501644;stroke-width:0.27563068px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path28873-3-5"
+         d="m 833.04966,515.70217 48.6038,3.12416 9.09052,-25.24283 -8.36323,-32.86562 -20.8475,-6.87303 -27.99873,14.24593 -1.81813,24.86791 z"
+         style="opacity:0.2;fill:#000000;stroke:#501644;stroke-width:0.17229947px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,740 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="243.39653"
+   height="665.27203"
+   id="svg4406"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="isis.svg">
+  <defs
+     id="defs4408">
+    <linearGradient
+       id="linearGradient4908">
+      <stop
+         style="stop-color:#c13c1b;stop-opacity:1;"
+         offset="0"
+         id="stop4910" />
+      <stop
+         id="stop4912"
+         offset="0.83928573"
+         style="stop-color:#c13c1b;stop-opacity:0.49803922;" />
+      <stop
+         style="stop-color:#c13c1b;stop-opacity:0;"
+         offset="1"
+         id="stop4914" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient10994"
+       id="linearGradient4109"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(-0.1089142,-0.00412888,0.00493096,-0.1263475,562.66438,888.84064)"
+       x1="1719.3101"
+       y1="1012.7137"
+       x2="1765.7162"
+       y2="1012.7137" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient10994"
+       id="linearGradient4112"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(-0.1115947,-0.01202727,0.01073797,-0.1167007,555.02455,910.67464)"
+       x1="1719.3101"
+       y1="1012.7137"
+       x2="1765.7162"
+       y2="1012.7137" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient10994"
+       id="linearGradient4115"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(-0.1087854,-0.0068682,0.00742998,-0.1262151,561.98826,887.84605)"
+       x1="1719.3101"
+       y1="1012.7137"
+       x2="1765.7162"
+       y2="1012.7137" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient10994"
+       id="linearGradient4118"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(-0.111464,-0.0120132,0.01154851,-0.1255097,561.47216,898.64022)"
+       x1="1719.3101"
+       y1="1012.7137"
+       x2="1765.7162"
+       y2="1012.7137" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient10994"
+       id="linearGradient4121"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(-0.1115947,-0.01202727,0.01073797,-0.1167007,560.24314,895.71081)"
+       x1="1719.3101"
+       y1="1012.7137"
+       x2="1765.7162"
+       y2="1012.7137" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient10994"
+       id="linearGradient4124"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(-0.1087854,-0.0068682,0.00742998,-0.1262151,557.9101,898.79672)"
+       x1="1719.3101"
+       y1="1012.7137"
+       x2="1765.7162"
+       y2="1012.7137" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient10994"
+       id="linearGradient4127"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(-0.111464,-0.0120132,0.01154851,-0.1255097,557.394,909.59088)"
+       x1="1719.3101"
+       y1="1012.7137"
+       x2="1765.7162"
+       y2="1012.7137" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient10994"
+       id="linearGradient4130"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(-0.1115947,-0.01202727,0.01073797,-0.1167007,557.67583,903.00322)"
+       x1="1719.3101"
+       y1="1012.7137"
+       x2="1765.7162"
+       y2="1012.7137" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient10994"
+       id="linearGradient4133"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(-0.1087854,-0.0068682,0.00742998,-0.1262151,555.34282,906.08917)"
+       x1="1719.3101"
+       y1="1012.7137"
+       x2="1765.7162"
+       y2="1012.7137" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient10994"
+       id="linearGradient4136"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(-0.111464,-0.0120132,0.01154851,-0.1255097,554.82672,916.88329)"
+       x1="1719.3101"
+       y1="1012.7137"
+       x2="1765.7162"
+       y2="1012.7137" />
+    <linearGradient
+       id="linearGradient10994">
+      <stop
+         style="stop-color:#c13c1b;stop-opacity:1;"
+         offset="0"
+         id="stop10996" />
+      <stop
+         id="stop11002"
+         offset="0.83928573"
+         style="stop-color:#c13c1b;stop-opacity:0.49803922;" />
+      <stop
+         style="stop-color:#c13c1b;stop-opacity:0;"
+         offset="1"
+         id="stop10998" />
+    </linearGradient>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2.371777"
+     inkscape:cx="7.8907826"
+     inkscape:cy="309.4644"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1600"
+     inkscape:window-height="843"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <metadata
+     id="metadata4411">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-52.411857,-287.00009)">
+    <g
+       id="g31797-1"
+       transform="matrix(0.16990158,0,0,0.16990158,616.45056,480.99049)"
+       style="fill:#ffff00;fill-opacity:1;stroke:#ffff00;stroke-width:2;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       inkscape:export-filename="/home/jvhoof/Dropbox/Games for design and play/PROJECT FOLDER/Assets/Backgrounds/isis.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         style="fill:#ffff00;fill-opacity:1;fill-rule:evenodd;stroke:#ffff00;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         d="m -2304.663,196.51047 114.1474,5.30329 -2.2729,59.09393 -115.9151,-2.52538 4.0406,-61.87184 z"
+         id="path31799-1"
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0" />
+    </g>
+    <path
+       sodipodi:type="arc"
+       style="opacity:0.2;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.80000001;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path5200"
+       sodipodi:cx="136.4716"
+       sodipodi:cy="666.44269"
+       sodipodi:rx="84.145706"
+       sodipodi:ry="96.166519"
+       d="m 220.61731,666.44269 c 0,53.1113 -37.67332,96.16652 -84.14571,96.16652 -46.472387,0 -84.145703,-43.05522 -84.145703,-96.16652 0,-53.1113 37.673316,-96.16652 84.145703,-96.16652 46.47239,0 84.14571,43.05522 84.14571,96.16652 z"
+       transform="matrix(1.1441544,-0.23065669,0.75328629,0.35034073,-483.15374,711.07677)"
+       inkscape:export-filename="/home/jvhoof/Dropbox/Games for design and play/PROJECT FOLDER/Assets/Backgrounds/isis.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#002255;fill-rule:evenodd;stroke:#000000;stroke-width:0.16545518px;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+       d="m 230.49531,524.84345 13.35179,0.77872 0.44173,-24.57908 c 0.57768,-9.39027 0.0701,-13.19708 -1.82817,-19.43972 -5.21658,-22.35649 -11.02751,-44.83805 -21.05416,-68.20689 -7.68826,-13.81731 -8.19266,-32.89919 -36.00486,-31.96896 -6.84884,-0.30161 -13.7094,-0.17898 -20.60151,1.08676 -2.222,1.10339 -15.98363,1.8702 -18.36599,22.90223 13.13785,-0.26436 16.55341,4.64739 28.89973,9.60728 l 2.91691,1.80779 3.54297,9.65919 c -3.74636,4.25662 -5.62007,15.95744 -6.76205,30.3616 -1.47753,20.58752 -1.8298,41.23157 -3.46587,61.8099 l 19.72241,0.78063 5.25857,-16.77595 26.71926,-14.80906 c 7.03764,6.03387 4.46095,4.89271 7.76754,22.47939 -0.28622,4.17118 -0.008,9.02707 -0.5383,14.50617 z"
+       id="path2678-4"
+       sodipodi:nodetypes="cccccccccccccccccc"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/jvhoof/Dropbox/Games for design and play/PROJECT FOLDER/Assets/Backgrounds/isis.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#f4b97f;fill-opacity:1;stroke:#f4b97f;stroke-width:4.19370031px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 241.22732,652.54819 c -0.24743,-62.16011 -0.034,-117.97974 -2.18411,-177.28579 -0.50228,-3.15924 -3.45817,-4.13746 -7.11432,-4.49322 l -97.42515,-5.61658 c -10.17996,-1.29216 -14.12795,6.85809 -12.65948,23.21511 -1.84951,25.7749 -2.72482,52.13432 0.37449,80.87853 -14.79449,20.95441 -25.376524,48.0345 -35.534004,69.19694 l 6.70232,14.67706 c 9.824414,-14.87258 21.279504,-22.52051 29.535144,-44.63011 6.23456,-14.1048 12.27374,-17.63082 13.47976,-29.25479 l 6.78529,-83.80196 9.73538,22.14048 58.03783,-0.74887 c 4.99248,-14.44462 8.92592,-18.96945 13.91839,-19.45194 -4.71955,40.38383 -1.2808,64.65285 -1.49774,96.97932 l 2.66889,69.74535 z"
+       id="path4315"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccccccccccccc"
+       inkscape:export-filename="/home/jvhoof/Dropbox/Games for design and play/PROJECT FOLDER/Assets/Backgrounds/isis.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#e3ac76;fill-opacity:1;stroke:#e3ac76;stroke-width:4.19370031px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 187.84283,852.79719 -0.13252,19.59277 c -1.04512,16.8178 -60.44041,14.9439 -57.12391,24.6763 26.61788,-0.7241 51.85737,-0.8216 73.01535,0.9361 7.73922,-3.501 -5.41575,-26.2432 -0.93612,-46.05582 z"
+       id="path4841-0"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccc"
+       inkscape:export-filename="/home/jvhoof/Dropbox/Games for design and play/PROJECT FOLDER/Assets/Backgrounds/isis.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#f4b97f;fill-opacity:1;stroke:#f4b97f;stroke-width:4.19370031px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 157.38314,853.73331 -0.13252,19.59275 c -1.04511,16.8178 -60.440404,14.944 -57.1239,24.6763 26.61788,-0.7241 51.85737,-0.8216 73.01534,0.9361 7.73922,-3.501 -5.41574,-26.2432 -0.93611,-46.0558 z"
+       id="path4841"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccc"
+       inkscape:export-filename="/home/jvhoof/Dropbox/Games for design and play/PROJECT FOLDER/Assets/Backgrounds/isis.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#c13c1b;fill-opacity:1;stroke:#c13c1b;stroke-width:4.19370031px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 153.04262,516.18578 c -18.83575,16.42199 5.87085,41.81585 1.37767,66.16577 -4.55864,44.6138 -2.10868,75.14113 9.36097,142.28625 -0.76623,38.83404 -7.22725,83.36287 -10.85871,125.06213 l 51.29793,-0.74887 c -0.3552,-64.76826 1.49502,-123.65502 4.11885,-180.4789 2.18949,-30.29072 13.63225,-54.2198 1.49773,-94.35825 -2.59179,-2.96206 3.18386,-61.74079 1.49774,-57.66338 -2.2466,-0.3745 -58.29218,-0.26462 -58.29218,-0.26462 z"
+       id="path4317"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccccccc"
+       inkscape:export-filename="/home/jvhoof/Dropbox/Games for design and play/PROJECT FOLDER/Assets/Backgrounds/isis.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       inkscape:connector-curvature="0"
+       style="opacity:0.1;fill:#000000;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 65.065146,661.24701 7.41957,5.39461 11.6152,-2.27405 10.80086,-10.81066 c 2.4561,-3.71814 5.04053,-6.97109 7.625004,-10.125 2.58446,-3.15391 5.18811,-6.20137 7.75,-9.46875 1.28094,-1.63369 2.53425,-3.30463 3.78125,-5.09375 1.247,-1.78912 2.49331,-3.68948 3.6875,-5.71875 1.19418,-2.02927 2.34624,-4.20837 3.46875,-6.5625 1.1225,-2.35413 2.21804,-4.89255 3.25,-7.65625 1.55864,-3.5262 3.10074,-6.37932 4.5625,-8.875 1.46175,-2.49568 2.84256,-4.6387 4.0625,-6.6875 1.21993,-2.0488 2.26056,-4.00193 3.09375,-6.1875 0.41659,-1.09279 0.80102,-2.23234 1.09375,-3.46875 0.29273,-1.23641 0.50549,-2.57825 0.65625,-4.03125 l 0.96875,-12.03125 c -1.82471,3.60824 -2.8154,6.93847 -5.90625,10.96875 -8.04954,24.17327 -24.58129,47.69407 -38.218754,71.4375 -9.34375,6.81094 -20.36688,8.1456 -29.71063,11.1901 z"
+       id="path4968"
+       sodipodi:nodetypes="ccccssssscssssccccc"
+       inkscape:export-filename="/home/jvhoof/Dropbox/Games for design and play/PROJECT FOLDER/Assets/Backgrounds/isis.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       inkscape:connector-curvature="0"
+       style="opacity:0.2;fill:#000000;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 166.69497,851.06841 39.07535,-0.46748 c -0.0888,-16.19206 -0.0395,-35.29771 0.125,-50.81425 0.16451,-15.51654 0.43943,-30.72715 0.8125,-45.6875 0.37307,-14.96035 0.83812,-29.664 1.375,-44.1875 0.53688,-14.5235 1.15654,-28.85653 1.8125,-43.0625 0.27369,-3.78634 0.68877,-7.49338 1.1875,-11.125 0.49873,-3.63162 1.09197,-7.18493 1.6875,-10.75 1.19105,-7.13015 2.44122,-14.23204 3.25,-21.625 0.40439,-3.69648 0.69604,-7.44932 0.8125,-11.34375 0.11646,-3.89443 0.0497,-7.91319 -0.25,-12.09375 -0.29972,-4.18056 -0.84335,-8.5389 -1.6875,-13.09375 -0.84415,-4.55485 -1.98318,-9.32644 -3.5,-14.34375 -0.32397,-0.37026 -0.53159,-1.61725 -0.625,-3.5 -0.0934,-1.88275 -0.0753,-4.38083 0,-7.3125 0.15065,-5.86334 0.57666,-13.37862 1.03125,-20.65625 0.45459,-7.27763 0.92364,-14.3291 1.1875,-19.3125 0.13193,-2.4917 0.22725,-4.4647 0.21875,-5.6875 -0.004,-0.6114 -0.0428,-1.04275 -0.0937,-1.25 -0.051,-0.20725 -0.11337,-0.19234 -0.21875,0.0625 -0.65409,-0.10903 -10.40495,-0.11467 -17.46875,-0.15625 l -31.76206,336.46986 z"
+       id="path4929"
+       sodipodi:nodetypes="ccssscsssssscsssscccccc"
+       inkscape:export-filename="/home/jvhoof/Dropbox/Games for design and play/PROJECT FOLDER/Assets/Backgrounds/isis.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#ffff00;stroke:#ffff00;stroke-width:0.92862749px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 220.77642,519.38383 21.68819,4.72592 -0.12635,12.30127 -21.99658,-3.04852 z"
+       id="path5019-2"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="/home/jvhoof/Dropbox/Games for design and play/PROJECT FOLDER/Assets/Backgrounds/isis.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       inkscape:connector-curvature="0"
+       style="opacity:0.2;fill:#000000;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 238.39061,577.18236 -0.0303,79.81802 c 0,0 1.5758,5.5319 4.03125,4.65625 l 0.5,-2.21875 c -0.19317,-48.52771 -0.13301,-97.38943 -1.125,-144.71875 -1.33332,0.92536 -2.4725,60.21989 -3.37592,62.46323 z"
+       id="path4991"
+       sodipodi:nodetypes="ccccccc"
+       inkscape:export-filename="/home/jvhoof/Dropbox/Games for design and play/PROJECT FOLDER/Assets/Backgrounds/isis.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#ffff00;stroke:#ffff00;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 153.12232,464.53292 c 4.09502,12.75568 10.59177,26.11868 26.875,26.25 16.28323,0.13132 26.39744,-10.76442 30.625,-22.875 l 5.75,0.25 c -2.98376,17.36175 -17.71498,36.07838 -37.625,34.375 -19.91002,-1.70338 -30.70154,-22.30993 -35.5625,-38.5 z"
+       id="path5017"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="czcczcc"
+       inkscape:export-filename="/home/jvhoof/Dropbox/Games for design and play/PROJECT FOLDER/Assets/Backgrounds/isis.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#ffff00;stroke:#ffff00;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 118.86473,503.07711 25.25759,4.70581 -0.875,12 -24.88887,-2.78661 z"
+       id="path5019"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="/home/jvhoof/Dropbox/Games for design and play/PROJECT FOLDER/Assets/Backgrounds/isis.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#f4b97f;fill-opacity:1;fill-rule:evenodd;stroke:#784421;stroke-width:0.27725896px;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+       d="m 88.454416,636.73588 c -9.77587,0.61601 -21.80253,3.21696 -30.81792,15.85589 l -5.08601,2.65102 c 2.00132,6.15513 7.3149,3.27902 9.19012,0.36105 -1.19355,2.62695 -0.85433,4.41824 2.19196,4.73363 -0.87657,2.47406 -0.16215,4.03131 2.65939,4.37432 -1.73371,2.34985 -0.1506,4.737 2.50361,4.49409 -1.20937,3.11036 0.29308,4.63545 1.90146,4.83109 4.12126,2.38794 24.46513,-20.76606 26.57703,-22.76554"
+       id="path2694-2"
+       sodipodi:nodetypes="ccccccccc"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/jvhoof/Dropbox/Games for design and play/PROJECT FOLDER/Assets/Backgrounds/isis.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       inkscape:connector-curvature="0"
+       style="fill:#ffff00;fill-opacity:1;fill-rule:evenodd;stroke:#ffff00;stroke-width:0.2772589;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 91.455026,624.08485 17.185174,13.98959 -10.808074,13.4043 -13.9355,-14.39992 7.5584,-12.99397 z"
+       id="path31793-2"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="/home/jvhoof/Dropbox/Games for design and play/PROJECT FOLDER/Assets/Backgrounds/isis.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path31795-5"
+       d="m 90.437326,625.83149 16.540314,13.99935 -3.18836,3.97653 -15.548494,-14.01908 2.19654,-3.9568 z"
+       style="fill:#0a4e73;fill-opacity:1;fill-rule:evenodd;stroke:#0a4e73;stroke-width:0.2772589;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="/home/jvhoof/Dropbox/Games for design and play/PROJECT FOLDER/Assets/Backgrounds/isis.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc"
+       style="fill:#0a4e73;fill-opacity:1;fill-rule:evenodd;stroke:#0a4e73;stroke-width:0.2772589;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 87.030006,631.58685 15.576594,13.89762 -3.188384,3.97652 -14.58475,-13.91735 2.19654,-3.95679 z"
+       id="path13461-6"
+       inkscape:export-filename="/home/jvhoof/Dropbox/Games for design and play/PROJECT FOLDER/Assets/Backgrounds/isis.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#f4b97f;fill-opacity:1;fill-rule:evenodd;stroke:none"
+       d="m 80.068486,645.24378 c -2.19659,-1.11691 -5.34497,0.34957 -12.47079,5.50355 l -0.54517,-7.48195 c 7.36113,-4.25665 10.58134,-5.34915 16.69586,-6.07909"
+       id="path18425-5"
+       sodipodi:nodetypes="cccc"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/jvhoof/Dropbox/Games for design and play/PROJECT FOLDER/Assets/Backgrounds/isis.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       inkscape:connector-curvature="0"
+       inkscape:transform-center-x="20.552319"
+       inkscape:transform-center-y="152.85782"
+       sodipodi:nodetypes="czcczccczzzzzzczzzzzzcc"
+       id="path6171-8"
+       d="m 76.287216,854.23762 c 0,0 0.16572,-2.40893 0.026,0.79242 -0.13968,3.20132 0.28881,42.71552 -0.87573,47.96882 l -1.36573,0 c -1.57289,-5.297 -1.17077,-44.7818 -1.29963,-48.03965 -0.12886,-3.25789 -0.0994,-0.72963 -0.0994,-0.72963 l 5e-5,0 -0.16715,-443.21363 c -2.88953,-0.40424 -2.753,-2.3105 -3.71448,-7.57287 -0.96147,-5.26236 -8.88788,-7.99223 -8.70776,-8.97013 0.18011,-0.9779 1.42604,-0.77762 2.31629,-1.23171 0.89025,-0.45409 2.2811,-0.76977 2.92094,-1.07032 0.63984,-0.30054 2.48577,-0.39059 3.47116,-0.55971 0.98539,-0.16912 1.45495,-0.32236 2.44265,-0.44467 0.9877,-0.12231 1.06406,-0.23128 3.16348,-0.23129 2.09942,1e-5 2.17578,0.10898 3.16348,0.23129 0.9877,0.12231 1.45726,0.27555 2.44265,0.44467 0.98539,0.16912 2.83132,0.25917 3.47116,0.55971 0.63984,0.30055 2.03069,0.61623 2.92094,1.07032 0.89025,0.45409 2.13618,0.25381 2.31629,1.23171 0.18012,0.9779 -7.74629,3.70777 -8.70776,8.97013 -0.96148,5.26237 -0.82495,7.16863 -3.81196,7.58657 z"
+       style="fill:#308d57;fill-opacity:1;fill-rule:evenodd;stroke:#308d57;stroke-width:0.2099968px;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+       inkscape:export-filename="/home/jvhoof/Dropbox/Games for design and play/PROJECT FOLDER/Assets/Backgrounds/isis.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       inkscape:connector-curvature="0"
+       style="opacity:0.2;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.2099968px;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+       d="m 74.630606,390.86719 -0.71875,511.31247 c 0.0492,0.2575 0.10259,0.5693 0.15625,0.75 l 1.375,0 c 1.16454,-5.2533 0.73532,-44.7674 0.875,-47.96872 0.13972,-3.20135 -0.0312,-0.78125 -0.0312,-0.78125 l -0.0937,-443.21875 c 2.98701,-0.41794 2.85102,-2.33138 3.8125,-7.59375 0.96147,-5.26236 8.86762,-7.99085 8.6875,-8.96875 -0.18011,-0.9779 -1.42225,-0.76466 -2.3125,-1.21875 -0.89025,-0.45409 -2.26641,-0.76195 -2.90625,-1.0625 -0.63984,-0.30054 -2.48336,-0.39338 -3.46875,-0.5625 -0.98539,-0.16912 -1.48105,-0.34644 -2.46875,-0.46875 -0.93835,-0.11619 -1.09685,-0.20862 -2.90625,-0.21875 z m -1.4375,501.59377 c 0.15184,4.1068 0.35139,7.4968 0.65625,9.375 l -0.65625,-9.375 z"
+       id="path6171-9"
+       inkscape:export-filename="/home/jvhoof/Dropbox/Games for design and play/PROJECT FOLDER/Assets/Backgrounds/isis.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <g
+       id="g18413-9"
+       transform="matrix(0.26656751,0.04427162,-0.04193593,0.28141443,628.92281,450.64477)"
+       style="stroke:#784421"
+       inkscape:export-filename="/home/jvhoof/Dropbox/Games for design and play/PROJECT FOLDER/Assets/Backgrounds/isis.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         sodipodi:nodetypes="ccccccccccccccccccccccccccc"
+         d="m -1921.7301,997.09676 c 12.1968,-10.60556 27.5526,-10.04028 16.3919,5.26544 9.7769,-10.49894 31.1907,-10.0906 11.25,11.4285 18.6021,-12.7696 20.6146,2.757 11.25,12.1429 12.5369,-8.7748 16.786,3.5712 4.2857,17.1429 -12.2339,17.2619 -26.7211,35.0289 -40.6926,52.2908 -0.2597,0.3099 -0.6214,0.518 -1.2166,0.4924 -5.9947,0.248 -12.2006,-3.6071 -9.4701,-15.0892 -9.584,2.3709 -16.6816,-4.9952 -11.6168,-14.1421 -10.5162,0.4355 -13.981,-4.5531 -12.1218,-13.6371 -11.3239,0.6607 -14.5531,-3.5877 -11.6168,-13.3845 0.4171,-0.8311 0.8342,-1.476 1.2513,-1.9704 14.9347,-18.2447 28.8808,-31.5468 41.912,-40.27424 m 2.7986,-1.94955 c -0.758,4.34254 3.8733,9.91869 11.1118,9.59649 m 2.8212,-2.0294 c -2.5971,5.2034 6.3071,11.5508 10.8988,11.0035 m 1.1454,-0.763 c -3.9499,5.533 2.9817,16.3174 11.8529,11.0864 m -1.4899,1.8618 c -2.1298,5.7471 2.7288,11.2492 7.8286,12.1578 m -66.3462,28.2884 c 1.7857,-1.4286 47.5318,-52.7626 47.5318,-52.7626 m -59.2461,38.8278 c 2.5,-2.8572 48.0701,-50.4042 48.0701,-50.4042 m -24.5663,78.3902 47.2142,-55.0281"
+         style="fill:#f4b97f;fill-opacity:1;fill-rule:evenodd;stroke:#784421;stroke-width:1px;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+         id="path17387-4"
+         inkscape:connector-curvature="0" />
+      <path
+         sodipodi:nodetypes="cccccccccc"
+         d="m -1905.3924,1002.9797 c -0.8122,0.6365 -0.8808,1.8107 -2.8212,2.0294 -8.8133,0.5485 -11.4269,-8.03404 -11.1874,-9.61274 11.6146,-8.59162 24.6587,-7.09645 14.2205,7.21834 9.7769,-10.4989 31.0329,-10.3431 11.0922,11.1759 18.6021,-12.7695 20.8356,2.3466 11.471,11.7325 11.1416,-7.7982 15.5165,1.4951 7.5442,12.9489 -5.1833,-1.0545 -10.0419,-6.5566 -7.467,-12.8874 -8.4262,4.6474 -14.758,-6.8315 -11.3808,-11.983 -5.1644,0.9288 -14.0686,-5.4185 -11.4715,-10.6219 z"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#784421;stroke-width:1px;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+         id="path17436-5"
+         inkscape:connector-curvature="0" />
+    </g>
+    <path
+       sodipodi:nodetypes="cccc"
+       id="path20365-8"
+       d="m 67.597696,650.74733 c 7.12582,-5.15398 10.37056,-6.62046 12.56716,-5.50355 m 3.51537,-8.02153 c -6.11452,0.72995 -9.38703,1.6724 -16.74816,6.14487"
+       style="fill:none;stroke:#784421;stroke-width:0.27725896px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/jvhoof/Dropbox/Games for design and play/PROJECT FOLDER/Assets/Backgrounds/isis.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <g
+       id="g22363-7"
+       transform="matrix(-0.21417473,0,0,0.21417473,85.657621,441.92325)"
+       style="fill:#ffcc00;fill-opacity:1;stroke:#ffcc00;stroke-opacity:1">
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:#ffcc00;fill-opacity:1;fill-rule:evenodd;stroke:#ffcc00;stroke-width:0.21417473px;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+         d="M 63.9375,395.65625 C 57.651065,395.71311 48.571525,394.97851 52,412.75 c 1.696448,8.79352 6.417165,14.11196 9.78125,20.125 l -16.0625,-1.125 c 0.657478,2.41589 0.491259,4.83411 0,7.25 l 16.0625,-1.0625 -1.21875,33.71875 c 2.126162,-0.54405 4.335088,-0.88094 7.03125,0 L 66.21875,437.9375 84.28125,439 c -0.547339,-2.41589 -0.605907,-4.83411 0,-7.25 l -18.0625,1.125 c 3.80248,-5.55134 8.535309,-11.63325 10.46875,-19.375 4.203458,-16.83118 -5.905768,-17.90567 -12.75,-17.84375 z m 0.09375,3.1875 c 5.159276,0.0312 11.538568,1.40533 9.84375,13.6875 -0.838376,6.0756 -4.186898,10.66481 -7.65625,15.375 -1.240866,1.74503 -2.896708,2.08623 -4.4375,0 -2.461425,-3.95129 -4.669912,-9.39111 -6.09375,-15.46875 -3.034809,-12.95406 3.756663,-13.62089 8.34375,-13.59375 z"
+         transform="matrix(-4.6690849,0,0,4.6690849,-377.93803,-762.0448)"
+         id="path2718-6" />
+    </g>
+    <path
+       style="fill:#f4b97f;fill-opacity:1;fill-rule:evenodd;stroke:#a05a2c;stroke-width:0.2099968px;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+       d="m 223.18387,661.59098 c -0.97395,4.8687 -3.37896,10.02359 -5.72748,15.16721 -3.10453,4.92743 -3.30631,11.21574 -2.43949,17.18245 l -0.31816,5.6214 c 8.74172,1.04631 0.29574,-10.62059 5.83352,-14.95509 l 0.84851,8.0609 c 1.5851,1.50868 3.14769,2.70261 4.45471,0.3182 1.55561,1.74226 3.11123,1.61641 4.66684,-0.3182 1.90196,2.45925 3.45474,0.72818 5.09108,0 1.74379,1.36405 3.58981,1.84879 4.77291,-1.27277 0.34393,-8.51407 2.89111,-16.78226 2.28038,-29.27377"
+       id="path2716-4"
+       sodipodi:nodetypes="ccccccccccc"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/jvhoof/Dropbox/Games for design and play/PROJECT FOLDER/Assets/Backgrounds/isis.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <g
+       id="g31785-3"
+       transform="matrix(0.2099968,0,0,0.2099968,708.17964,606.96024)"
+       inkscape:export-filename="/home/jvhoof/Dropbox/Games for design and play/PROJECT FOLDER/Assets/Backgrounds/isis.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:#fac53a;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         d="m -2309.4612,199.79346 97.2272,0.75761 -4.0406,61.36677 -92.6815,-3.53553 -0.5051,-58.58885 z"
+         id="path31787-0"
+         sodipodi:nodetypes="ccccc" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path31789-7"
+         d="m -2309.4612,208.6323 96.4696,1.26268 -0.9922,18.95959 -95.2249,-1.49728 -0.2525,-18.72499 z"
+         style="fill:#0044aa;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         sodipodi:nodetypes="ccccc" />
+    </g>
+    <path
+       inkscape:connector-curvature="0"
+       style="fill:#ffff00;fill-opacity:1;fill-rule:evenodd;stroke:#ffff00;stroke-width:0.2099968;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 223.20017,648.91624 20.4174,0.15909 -0.84851,12.88683 -19.46282,-0.74245 -0.10607,-12.30347 z"
+       id="path13439-2"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="/home/jvhoof/Dropbox/Games for design and play/PROJECT FOLDER/Assets/Backgrounds/isis.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path13441-2"
+       d="m 223.20017,650.77237 20.25831,0.26516 -0.20836,3.98145 -19.99692,-0.31443 -0.053,-3.93218 z"
+       style="fill:#0a4e73;fill-opacity:1;fill-rule:evenodd;stroke:#0a4e73;stroke-width:0.2099968;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="/home/jvhoof/Dropbox/Games for design and play/PROJECT FOLDER/Assets/Backgrounds/isis.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc"
+       style="fill:#0a4e73;fill-opacity:1;fill-rule:evenodd;stroke:#0a4e73;stroke-width:0.2099968;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 223.20017,655.94729 19.94012,0.26516 -0.20836,3.98145 -19.67873,-0.31442 -0.053,-3.93219 z"
+       id="path13451-6"
+       inkscape:export-filename="/home/jvhoof/Dropbox/Games for design and play/PROJECT FOLDER/Assets/Backgrounds/isis.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <g
+       id="g31785-3-1"
+       transform="matrix(0.2099968,0,0,0.2099968,639.34055,818.44402)"
+       inkscape:export-filename="/home/jvhoof/Dropbox/Games for design and play/PROJECT FOLDER/Assets/Backgrounds/isis.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:#fac53a;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         d="m -2309.4612,199.79346 97.2272,0.75761 -4.0406,61.36677 -92.6815,-3.53553 -0.5051,-58.58885 z"
+         id="path31787-0-1"
+         sodipodi:nodetypes="ccccc" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path31789-7-5"
+         d="m -2309.4612,208.6323 96.4696,1.26268 -0.9922,18.95959 -95.2249,-1.49728 -0.2525,-18.72499 z"
+         style="fill:#0044aa;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         sodipodi:nodetypes="ccccc" />
+    </g>
+    <path
+       inkscape:connector-curvature="0"
+       style="fill:#ffff00;fill-opacity:1;fill-rule:evenodd;stroke:#ffff00;stroke-width:0.2099968;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 154.36113,860.40002 20.4174,0.15909 -0.84851,12.88683 -19.46282,-0.74245 -0.10607,-12.30347 z"
+       id="path13439-2-2"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="/home/jvhoof/Dropbox/Games for design and play/PROJECT FOLDER/Assets/Backgrounds/isis.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path13441-2-5"
+       d="m 154.36113,862.25615 20.25831,0.26516 -0.20836,3.98145 -19.99692,-0.31443 -0.053,-3.93218 z"
+       style="fill:#0a4e73;fill-opacity:1;fill-rule:evenodd;stroke:#0a4e73;stroke-width:0.2099968;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="/home/jvhoof/Dropbox/Games for design and play/PROJECT FOLDER/Assets/Backgrounds/isis.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc"
+       style="fill:#0a4e73;fill-opacity:1;fill-rule:evenodd;stroke:#0a4e73;stroke-width:0.2099968;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 154.36113,867.43107 19.94012,0.26516 -0.20836,3.98145 -19.67873,-0.31442 -0.053,-3.93219 z"
+       id="path13451-6-8"
+       inkscape:export-filename="/home/jvhoof/Dropbox/Games for design and play/PROJECT FOLDER/Assets/Backgrounds/isis.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <g
+       id="g31785-3-3"
+       transform="matrix(0.2099968,0,0,0.2099968,669.75025,819.63656)"
+       inkscape:export-filename="/home/jvhoof/Dropbox/Games for design and play/PROJECT FOLDER/Assets/Backgrounds/isis.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:#fac53a;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         d="m -2309.4612,199.79346 97.2272,0.75761 -4.0406,61.36677 -92.6815,-3.53553 -0.5051,-58.58885 z"
+         id="path31787-0-2"
+         sodipodi:nodetypes="ccccc" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path31789-7-7"
+         d="m -2309.4612,208.6323 96.4696,1.26268 -0.9922,18.95959 -95.2249,-1.49728 -0.2525,-18.72499 z"
+         style="fill:#0044aa;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         sodipodi:nodetypes="ccccc" />
+    </g>
+    <path
+       inkscape:connector-curvature="0"
+       style="fill:#ffff00;fill-opacity:1;fill-rule:evenodd;stroke:#ffff00;stroke-width:0.2099968;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 184.77077,861.59256 20.4174,0.15909 -0.84851,12.88683 -19.46282,-0.74245 -0.10607,-12.30347 z"
+       id="path13439-2-5"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="/home/jvhoof/Dropbox/Games for design and play/PROJECT FOLDER/Assets/Backgrounds/isis.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path13441-2-8"
+       d="m 184.77077,863.44869 20.25831,0.26516 -0.20836,3.98145 -19.99692,-0.31443 -0.053,-3.93218 z"
+       style="fill:#0a4e73;fill-opacity:1;fill-rule:evenodd;stroke:#0a4e73;stroke-width:0.2099968;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="/home/jvhoof/Dropbox/Games for design and play/PROJECT FOLDER/Assets/Backgrounds/isis.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc"
+       style="fill:#0a4e73;fill-opacity:1;fill-rule:evenodd;stroke:#0a4e73;stroke-width:0.2099968;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 184.77077,868.62361 19.94012,0.26516 -0.20836,3.98145 -19.67873,-0.31442 -0.053,-3.93219 z"
+       id="path13451-6-6"
+       inkscape:export-filename="/home/jvhoof/Dropbox/Games for design and play/PROJECT FOLDER/Assets/Backgrounds/isis.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#f4b97f;fill-opacity:1;fill-rule:evenodd;stroke:#f4b97f;stroke-width:0.16545516px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 166.22272,470.20871 c -7.85399,-4.76286 -5.52821,-6.91678 -9.47504,-20.71532 -3.7638,0.0562 -9.25478,-0.42823 -11.1615,-1.28875 -1.50305,-0.67836 -1.98258,-1.49911 -2.45951,-3.20985 -0.27038,-0.96981 0.0141,-2.52074 0.42533,-4.19529 -0.52921,-0.74123 -1.43927,-0.95715 -2.18173,-1.40328 -0.66367,-0.87627 -0.22073,-1.7926 -0.12222,-2.18493 -0.46706,-0.53465 -0.99503,-1.3803 -0.6724,-2.10225 0.53758,-0.89186 0.74243,-1.77191 0.23405,-2.62664 -1.98795,-0.18996 -5.61453,-1.41389 -3.69772,-5.82057 1.72795,-3.97248 4.41999,-8.39075 6.71542,-12.63905 l 2.67287,-8.53776 c 4.65583,0.0162 27.03434,-0.15172 27.05254,7.9774 l 3.60511,0.80838 3.26285,2.44797 -0.0282,0.0968 3.15533,-0.24271 c -1.7075,6.06174 -3.48265,7.89326 -6.32282,55.78316 -2.07711,0.21346 -6.85316,-0.0261 -11.0023,-2.14735 z"
+       id="path2239-6"
+       sodipodi:nodetypes="ccsscccccsccccccccc"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/jvhoof/Dropbox/Games for design and play/PROJECT FOLDER/Assets/Backgrounds/isis.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:0.16545516px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 146.79996,409.01893 c 2.66176,-1.48065 5.30738,-1.86866 8.0199,-1.71395 1.41565,0.0807 3.21313,0.44708 4.69976,1.47216 5.88679,4.05908 5.89171,3.57951 8.11891,4.32771 0.10419,0.15637 0.25804,0.31716 0.01,0.44211 -1.13735,-0.0947 -2.72644,-0.59002 -4.35265,-1.22133 -1.51654,-0.58874 -3.17402,-2.01166 -5.53597,-2.7976 -1.74125,-0.57941 -3.71544,-0.64545 -5.58507,-0.59574 -1.72831,0.0459 -3.46346,0.68771 -5.4623,1.32728 -0.45674,0.14614 -1.68014,-0.2572 0.0878,-1.24064 z"
+       id="path2241-7"
+       sodipodi:nodetypes="cssccsssss"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/jvhoof/Dropbox/Games for design and play/PROJECT FOLDER/Assets/Backgrounds/isis.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:0.16545516px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 145.77112,415.59327 c 2.3629,-2.52207 4.51962,-3.04534 6.39177,-3.23008 2.86034,-0.28225 7.20045,0.17223 9.50986,1.11707 1.65868,0.67861 3.31626,0.39387 5.39621,0.83666 0.3894,0.0829 0.39978,0.72192 0.002,0.74755 -1.95081,0.12594 -4.14028,-0.20455 -5.82204,0.41273 -2.05202,0.75319 -4.27614,1.68287 -5.68621,2.18983 -1.36114,0.48936 -3.14414,0.82785 -5.9906,0.10353 -0.93768,-0.2386 -1.77022,-0.33303 -2.76829,0.0941 -2.48975,1.06542 -2.47101,-0.73696 -1.03344,-2.27135 z"
+       id="path2243-1"
+       sodipodi:nodetypes="csssssssss"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/jvhoof/Dropbox/Games for design and play/PROJECT FOLDER/Assets/Backgrounds/isis.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none;stroke:#784421;stroke-width:0.08495079;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 140.59938,435.19716 c 3.86917,-0.34904 5.03096,1.40268 8.4878,1.36048"
+       id="path2249-4"
+       sodipodi:nodetypes="cc"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/jvhoof/Dropbox/Games for design and play/PROJECT FOLDER/Assets/Backgrounds/isis.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none;stroke:#784421;stroke-width:0.08495079;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 141.42938,439.40156 c 4.3029,0.13476 5.36579,-1.80338 7.86368,-2.37034"
+       id="path2251-6"
+       sodipodi:nodetypes="cc"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/jvhoof/Dropbox/Games for design and play/PROJECT FOLDER/Assets/Backgrounds/isis.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:none;stroke:#784421;stroke-width:0.16990158px;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+       d="m 141.22085,437.25296 c 1.41646,0.30027 5.09715,0.0504 6.40578,-0.13402"
+       id="path2253-6"
+       sodipodi:nodetypes="cc"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/jvhoof/Dropbox/Games for design and play/PROJECT FOLDER/Assets/Backgrounds/isis.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:0.16990158px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 146.89248,416.41993 c 0.6308,-1.15701 1.57693,-1.34958 2.41079,-1.88554 -0.0228,0.81668 0.36976,1.43222 1.04663,1.83764 -0.84075,-0.006 -3.00247,-0.16459 -3.45742,0.0479 z"
+       id="path2245-7"
+       sodipodi:nodetypes="cccc"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/jvhoof/Dropbox/Games for design and play/PROJECT FOLDER/Assets/Backgrounds/isis.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:0.16990158px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 156.71345,413.72641 c -0.0133,1.02077 -0.15848,1.99965 -0.99349,2.75942 1.45168,-0.23538 2.88761,-1.40042 4.06622,-2.48562 -1.01873,0.21838 -1.96238,-0.11484 -3.07273,-0.2738 z"
+       id="path2247-8"
+       sodipodi:nodetypes="cccc"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/jvhoof/Dropbox/Games for design and play/PROJECT FOLDER/Assets/Backgrounds/isis.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:nodetypes="czzc"
+       id="path4483-6"
+       d="m 142.62439,427.94467 c 3.04226,2.46375 1.40764,3.98854 -0.03,3.92548 -1.42262,-0.063 -3.47647,-2.47902 -3.98806,-1.12371 -0.51656,1.36843 2.30593,0.88135 2.2639,0.49443"
+       style="fill:none;stroke:#784421;stroke-width:0.06757855px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/jvhoof/Dropbox/Games for design and play/PROJECT FOLDER/Assets/Backgrounds/isis.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       sodipodi:nodetypes="ccccc"
+       id="path7550-6"
+       d="m 181.59675,424.48972 c -2.92895,1.8056 -6.50011,19.6692 -6.602,30.53804 -1.43603,20.36463 -1.76282,40.95234 -3.38077,61.30283 l 19.72242,0.78063 1.61783,-54.39702"
+       style="fill:#002255;fill-rule:evenodd;stroke:#000000;stroke-width:0.16545518px;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/jvhoof/Dropbox/Games for design and play/PROJECT FOLDER/Assets/Backgrounds/isis.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#d40000;fill-rule:evenodd;stroke:#d40000;stroke-opacity:1"
+       d="m 211.27929,391.03347 c 0.25297,-0.20418 0.33295,-0.37954 0.34427,-0.54345 1.92485,-7.22916 6.05269,-7.03145 7.53087,-5.87026 3.95651,3.45256 -0.1251,5.13048 -3.5359,9.77886 l 23.32683,47.80511 -6.15605,2.63397 -19.00677,-47.77811 -17.67845,46.95373 -5.65842,-2.37563 21.52801,-47.93396 c -12.72666,5.41959 -43.73229,3.38627 -63.21581,1.91563 0.65369,-1.42596 1.39496,-2.96685 1.56813,-3.15993 28.12186,3.06252 56.14916,0.2849 60.95329,-1.42596 z"
+       id="path31807-6"
+       sodipodi:nodetypes="ccccccccccccc"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/jvhoof/Dropbox/Games for design and play/PROJECT FOLDER/Assets/Backgrounds/isis.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#000000;fill-rule:evenodd;stroke:#784421;stroke-width:0.06757855px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 141.04544,431.25172 c -1.06924,-0.63452 -2.09767,-1.40983 -2.4391,-0.50528 -0.51656,1.36843 2.30593,0.88135 2.2639,0.49443"
+       id="path9347-6"
+       sodipodi:nodetypes="czc"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/jvhoof/Dropbox/Games for design and play/PROJECT FOLDER/Assets/Backgrounds/isis.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <g
+       id="g13233-7"
+       transform="matrix(0.16990158,0,0,0.16990158,339.25049,481.03754)"
+       style="fill:#f4b97f;fill-opacity:1;stroke:#784421;stroke-opacity:1"
+       inkscape:export-filename="/home/jvhoof/Dropbox/Games for design and play/PROJECT FOLDER/Assets/Backgrounds/isis.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         sodipodi:nodetypes="cssssssss"
+         id="path2318-0"
+         d="m -936.0071,-369.91792 c -17.39992,-10.86777 -18.14508,-28.03375 -12.53163,-37.47581 13.45702,-22.63536 24.04848,-26.75349 34.1764,-24.07966 19.57982,5.16919 17.25631,29.43996 13.12685,50.22572 -4.0089,20.17918 -19.71557,33.9299 -28.19541,50.87198 -5.27853,10.54599 -7.67988,17.83013 -11.17674,21.80064 -4.04905,4.59758 -11.13177,11.29465 -21.09201,6.77745 -10.98262,-4.98086 -8.58958,-18.46597 -3.18606,-35.48878 4.28521,-13.49972 17.11172,-24.85538 23.62898,-28.77088"
+         style="fill:#f4b97f;fill-opacity:1;fill-rule:evenodd;stroke:#784421;stroke-width:0.97382951px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         inkscape:connector-curvature="0" />
+      <path
+         sodipodi:nodetypes="csssss"
+         id="path12256-4"
+         d="m -949.72592,-332.57492 c -4.59782,-1.43588 9.88176,-14.01791 17.34489,-25.35806 9.62807,-14.62966 -0.73355,-21.2161 -5.47211,-30.18064 -7.79637,-14.74947 4.89581,-37.30541 18.38602,-33.881 16.05792,4.07622 23.02719,24.76607 3.35145,55.87195 -8.83603,13.96912 -23.52475,36.69741 -33.61025,33.54775 z"
+         style="fill:#f4b97f;fill-opacity:1;stroke:#784421;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         inkscape:connector-curvature="0" />
+      <path
+         d="m -948.21423,-315.4949 c 0,3.74764 -2.79822,6.78571 -6.25,6.78571 -3.45178,0 -6.25,-3.03807 -6.25,-6.78571 0,-3.74765 2.79822,-6.78572 6.25,-6.78572 3.45178,0 6.25,3.03807 6.25,6.78572 z"
+         sodipodi:ry="6.7857141"
+         sodipodi:rx="6.25"
+         sodipodi:cy="-315.4949"
+         sodipodi:cx="-954.46423"
+         id="path12262-8"
+         style="color:#000000;fill:#f4b97f;fill-opacity:1;stroke:#784421;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+         sodipodi:type="arc" />
+    </g>
+    <path
+       style="fill:none;stroke:#784421;stroke-width:0.08495079;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 147.2285,448.68416 c 9.81786,1.58824 14.19526,0.53656 17.80413,-1.92344"
+       id="path13238-0"
+       sodipodi:nodetypes="cc"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/jvhoof/Dropbox/Games for design and play/PROJECT FOLDER/Assets/Backgrounds/isis.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <path
+       style="fill:#002255;fill-rule:evenodd;stroke:#000000;stroke-width:0.38424721px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 159.37173,381.20081 40.36741,0 0,-94.0086 -6.59852,0 0,28.69113 -14.36149,0 0,57.94265 -19.4074,0 0,7.37482"
+       id="path13385-8"
+       sodipodi:nodetypes="ccccccccc"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/jvhoof/Dropbox/Games for design and play/PROJECT FOLDER/Assets/Backgrounds/isis.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <g
+       id="g31797-5"
+       transform="matrix(0.16990158,0,0,0.16990158,563.68916,473.58789)"
+       style="fill:#ffff00;fill-opacity:1;stroke:#ffff00;stroke-width:2;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       inkscape:export-filename="/home/jvhoof/Dropbox/Games for design and play/PROJECT FOLDER/Assets/Backgrounds/isis.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         style="fill:#ffff00;fill-opacity:1;fill-rule:evenodd;stroke:#ffff00;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         d="m -2304.663,196.51047 114.1474,5.30329 -2.2729,59.09393 -115.9151,-2.52538 4.0406,-61.87184 z"
+         id="path31799-3"
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0" />
+    </g>
+  </g>
+</svg>
